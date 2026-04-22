@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Journal | GEOPOLIS Society</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+</head>
+<body>
+<nav class="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <svg width="38" height="38" viewBox="0 0 38 38" fill="none"><circle cx="19" cy="19" r="17" stroke="#c9a84c" stroke-width="1.5"/><circle cx="19" cy="19" r="10" stroke="#c9a84c" stroke-width="1"/><ellipse cx="19" cy="19" rx="5" ry="17" stroke="#c9a84c" stroke-width="1"/><line x1="2" y1="19" x2="36" y2="19" stroke="#c9a84c" stroke-width="1"/><circle cx="19" cy="19" r="2.5" fill="#c9a84c"/></svg>
+      <div><div class="navbar__logo-name">GEOPOLIS</div><div class="navbar__logo-sub">Pondicherry University</div></div>
+    </a>
+    <ul class="navbar__links" role="list">
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+      <li><a href="journal.html" class="active">Journal</a></li><li><a href="events.html">Events</a></li>
+      <li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html#join" class="btn btn--gold navbar__cta" style="font-size:0.8rem;padding:0.5rem 1.1rem;">Join Us</a>
+    <button class="navbar__hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </div>
+  <div class="navbar__mobile" id="mobileMenu">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="journal.html">Journal</a>
+    <a href="events.html">Events</a><a href="team.html">Team</a><a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span>›</span><span>Journal</span></div>
+      <p class="page-hero__label">Publications</p>
+      <h1 class="page-hero__title">GEOPOLIS Journal of Geopolitics &amp; Public Policy</h1>
+      <p class="page-hero__desc">A student peer-reviewed journal publishing original research articles, policy briefs, opinion essays, and book reviews on geopolitics, international relations, and governance.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="journal-meta reveal">
+        <div class="jmeta-card"><div class="jmeta-card__num">Vol. I</div><div class="jmeta-card__label">Current Volume</div></div>
+        <div class="jmeta-card"><div class="jmeta-card__num">2025</div><div class="jmeta-card__label">Inaugural Year</div></div>
+        <div class="jmeta-card"><div class="jmeta-card__num">Annual</div><div class="jmeta-card__label">Frequency</div></div>
+        <div class="jmeta-card"><div class="jmeta-card__num">Open</div><div class="jmeta-card__label">Access Policy</div></div>
+      </div>
+
+      <div class="submit-banner reveal" id="submit">
+        <div class="submit-banner__text">
+          <h3>Submit Your Research</h3>
+          <p>We accept research articles (1,500–3,000 words), policy briefs (500–800 words), opinion essays, and book reviews from students of Pondicherry University. Submissions undergo a double-blind peer review process.</p>
+        </div>
+        <a href="contact.html" class="btn btn--gold" style="white-space:nowrap;">Submit Article →</a>
+      </div>
+
+      <div class="section-header reveal">
+        <span class="section-label">Browse by Category</span>
+        <div class="gold-line"></div>
+        <h2 class="section-title">Published Articles</h2>
+      </div>
+
+      <div class="categories reveal">
+        <button class="cat-btn active" data-cat="all">All Articles</button>
+        <button class="cat-btn" data-cat="geopolitics">Geopolitics</button>
+        <button class="cat-btn" data-cat="policy">Public Policy</button>
+        <button class="cat-btn" data-cat="ir">International Relations</button>
+        <button class="cat-btn" data-cat="opinion">Opinion</button>
+        <button class="cat-btn" data-cat="review">Book Reviews</button>
+      </div>
+
+      <div class="articles-grid">
+        <article class="article-card reveal" data-cat="geopolitics">
+          <div class="article-card__top"><span class="article-card__category">Geopolitics</span><span class="article-card__date">March 2025</span></div>
+          <div class="article-card__body">
+            <h3 class="article-card__title">The QUAD Framework: Strategic Convergence and Its Limits in the Indo-Pacific</h3>
+            <p class="article-card__author">Arjun Sharma · MA Political Science, 2nd Year</p>
+            <p class="article-card__summary">Examines the Quadrilateral Security Dialogue as a strategic framework, analysing its capacity to counter Chinese influence while managing the divergent national interests of India, the USA, Australia, and Japan in the Indo-Pacific theatre.</p>
+          </div>
+          <div class="article-card__footer"><span class="article-card__read">Read Article →</span><span class="article-card__mins">8 min read</span></div>
+        </article>
+
+        <article class="article-card reveal reveal-delay-1" data-cat="policy">
+          <div class="article-card__top"><span class="article-card__category">Public Policy</span><span class="article-card__date">February 2025</span></div>
+          <div class="article-card__body">
+            <h3 class="article-card__title">India's Semiconductor Policy: Strategic Imperatives and Structural Challenges</h3>
+            <p class="article-card__author">Priya Menon · MA International Studies, 1st Year</p>
+            <p class="article-card__summary">Assesses India's Production-Linked Incentive scheme for semiconductors, examining whether the current framework is sufficient to build a self-reliant electronics ecosystem amid global supply chain realignments and US-China tech decoupling.</p>
+          </div>
+          <div class="article-card__footer"><span class="article-card__read">Read Article →</span><span class="article-card__mins">6 min read</span></div>
+        </article>
+
+        <article class="article-card reveal reveal-delay-2" data-cat="ir">
+          <div class="article-card__top"><span class="article-card__category">International Relations</span><span class="article-card__date">January 2025</span></div>
+          <div class="article-card__body">
+            <h3 class="article-card__title">India-China Border Disputes: Legal Frameworks, Strategic Calculations, and the Path Ahead</h3>
+            <p class="article-card__author">Rahul Verma · MA Political Science, 2nd Year</p>
+            <p class="article-card__summary">Analyses the legal and strategic dimensions of the India-China boundary dispute, with particular focus on the Galwan Valley incident, the McMahon Line controversy, and implications for bilateral relations and Himalayan stability.</p>
+          </div>
+          <div class="article-card__footer"><span class="article-card__read">Read Article →</span><span class="article-card__mins">10 min read</span></div>
+        </article>
+
+        <article class="article-card reveal reveal-delay-3" data-cat="opinion">
+          <div class="article-card__top"><span class="article-card__category">Opinion</span><span class="article-card__date">December 2024</span></div>
+          <div class="article-card__body">
+            <h3 class="article-card__title">The Limits of Non-Alignment: Why India Must Choose Strategic Partners in a Bipolar World</h3>
+            <p class="article-card__author">Kavitha Nair · MA International Studies, 2nd Year</p>
+            <p class="article-card__summary">Argues that India's traditional doctrine of strategic autonomy is increasingly untenable in a world bifurcating into US-led and China-led spheres, and that New Delhi must forge deeper, legally binding security partnerships to protect its core interests.</p>
+          </div>
+          <div class="article-card__footer"><span class="article-card__read">Read Article →</span><span class="article-card__mins">5 min read</span></div>
+        </article>
+
+        <article class="article-card reveal reveal-delay-4" data-cat="review">
+          <div class="article-card__top"><span class="article-card__category">Book Review</span><span class="article-card__date">November 2024</span></div>
+          <div class="article-card__body">
+            <h3 class="article-card__title">Review: "The India Way" by S. Jaishankar — A Strategic Vision or Tactical Pragmatism?</h3>
+            <p class="article-card__author">Deepak Pillai · MA Political Science, 1st Year</p>
+            <p class="article-card__summary">A critical appraisal of External Affairs Minister S. Jaishankar's articulation of India's foreign policy doctrine, examining whether it represents a coherent strategic vision or a sophisticated rationalisation of tactical opportunism in a multipolar world.</p>
+          </div>
+          <div class="article-card__footer"><span class="article-card__read">Read Review →</span><span class="article-card__mins">7 min read</span></div>
+        </article>
+      </div>
+
+      <div class="info-strip reveal" style="margin-top:3rem;">
+        <span class="info-strip__icon">📌</span>
+        <p><strong>Submission Guidelines:</strong> Articles must be original, unpublished work. Accepted formats: Research Articles (1,500–3,000 words), Policy Briefs (500–800 words), Opinion Essays (800–1,200 words), Book Reviews (600–1,000 words). All citations must follow Chicago Author-Date style. Submit via the <a href="contact.html" style="color:var(--navy);font-weight:600;">contact form</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-label" style="display:block;text-align:center;margin-bottom:1rem;">Contribute</span>
+      <h2>Submit Your Research to GEOPOLIS</h2>
+      <p>We invite MA and BA students of Pondicherry University to submit original research for consideration in the next issue of the GEOPOLIS Journal. All submissions undergo a structured peer review process.</p>
+      <div class="btn-group">
+        <a href="contact.html" class="btn btn--gold">Submit an Article →</a>
+        <a href="about.html" class="btn btn--outline-white">Submission Guidelines</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div><div class="footer__brand-name">GEOPOLIS Society</div><div class="footer__brand-sub">Geopolitics &amp; Public Policy Forum</div><p class="footer__brand-desc">A student-led academic society at the Department of Politics &amp; International Studies, Pondicherry University.</p></div>
+      <div class="footer__col"><h4>Navigate</h4><ul role="list"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="journal.html">Journal</a></li><li><a href="events.html">Events</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div class="footer__col"><h4>Publications</h4><ul role="list"><li><a href="journal.html">Research Articles</a></li><li><a href="journal.html">Policy Briefs</a></li><li><a href="journal.html">Opinion</a></li><li><a href="journal.html">Book Reviews</a></li><li><a href="journal.html#submit">Submit Article</a></li></ul></div>
+      <div class="footer__col"><h4>Connect</h4><ul role="list"><li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li><li><a href="contact.html">Write to Us</a></li><li><a href="contact.html#join">Join Society</a></li><li><a href="about.html#constitution">Constitution</a></li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">&copy; 2025 GEOPOLIS Society, Pondicherry University. All rights reserved.</p>
+      <p class="footer__tagline">"To think critically, write rigorously, and engage purposefully."</p>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var btn=document.getElementById('hamburger'),menu=document.getElementById('mobileMenu');
+  if(btn&&menu){btn.addEventListener('click',function(){menu.classList.toggle('open');btn.classList.toggle('open');});}
+  var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('visible');obs.unobserve(x.target);}});},{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el);});
+  document.querySelectorAll('.cat-btn').forEach(function(b){b.addEventListener('click',function(){
+    document.querySelectorAll('.cat-btn').forEach(function(x){x.classList.remove('active');});
+    b.classList.add('active');var cat=b.dataset.cat;
+    document.querySelectorAll('.article-card').forEach(function(c){c.style.display=(cat==='all'||c.dataset.cat===cat)?'flex':'none';});
+  });});
+})();
+</script>
+</body></html>
