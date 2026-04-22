@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: anandkumarjha11110/geoplois-site
+  repo: anandkumarjha11110/geopolis-site
   branch: main
 
 media_folder: "images/uploads"
