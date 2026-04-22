@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: anandkumarjha11110/geopolis-site
+  repo: Anandkumarjha11110/geopolis-site
   branch: main
   base_url: https://geopolis-oauth.anandkumarjha11110.workers.dev
 
