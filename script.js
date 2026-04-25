@@ -52,7 +52,7 @@ function escapeHtml(text) {
 }
 
 async function getArticleIndex() {
-  const api = `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/${CONFIG.contentDir}?ref=${CONFIG.branch}`;
+  const api = `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/${CONFIG.contentDir}`;
   const response = await fetch(api, { headers: { Accept: 'application/vnd.github+json' } });
   if (!response.ok) throw new Error('Unable to load articles from GitHub API.');
   const payload = await response.json();

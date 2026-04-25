@@ -1,8 +1,5 @@
 backend:
-  name: github
-  repo: anandkumarjha11110/geopolis-site
-  branch: main
-  auth_endpoint: "/api/auth"
+  name: test-repo
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
