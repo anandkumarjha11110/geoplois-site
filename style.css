@@ -111,3 +111,42 @@ img { max-width: 100%; display: block; }
 @media (max-width: 820px) {
   .nav-links { display: none; }
 }
+
+.form-shell {
+  width: min(760px, 94vw);
+}
+
+.site-form {
+  background: #fff;
+  border: 1px solid #e3e8f3;
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 10px 25px rgba(16, 35, 75, 0.06);
+  display: grid;
+  gap: 0.7rem;
+}
+
+.site-form label {
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.site-form input,
+.site-form textarea {
+  width: 100%;
+  border: 1px solid #d6deed;
+  border-radius: 10px;
+  padding: 0.75rem;
+  font: inherit;
+  color: var(--text);
+  background: #fff;
+}
+
+.site-form textarea {
+  resize: vertical;
+}
+
+.site-form button {
+  justify-self: start;
+  margin-top: 0.4rem;
+}
