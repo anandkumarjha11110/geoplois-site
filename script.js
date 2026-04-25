@@ -5,9 +5,14 @@ const CONFIG = {
   contentDir: 'content/articles'
 };
 
+const ARTICLE_FORM_URL = 'submit-article.html';
+const MEMBERSHIP_FORM_URL = 'membership.html';
+
 function parseFrontmatter(markdown) {
-  const match = markdown.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
-  if (!match) return { data: {}, body: markdown };
+  const normalized = markdown.replace(/\r\n/g, '\n');
+  const match = normalized.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+  if (!match) return { data: {}, body: normalized };
+
   const data = {};
   match[1].split('\n').forEach((line) => {
     const idx = line.indexOf(':');
@@ -17,6 +22,7 @@ function parseFrontmatter(markdown) {
       data[key] = value;
     }
   });
+
   return { data, body: match[2].trim() };
 }
 
@@ -32,21 +38,35 @@ function formatDate(value) {
 
 async function fetchMarkdownByUrl(url) {
   const res = await fetch(url);
-  if (!res.ok) throw new Error(`Fetch failed ${url}`);
+  if (!res.ok) throw new Error(`Fetch failed: ${url}`);
   return res.text();
+}
+
+function escapeHtml(text) {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
 }
 
 async function getArticleIndex() {
   const api = `https://api.github.com/repos/${CONFIG.owner}/${CONFIG.repo}/contents/${CONFIG.contentDir}?ref=${CONFIG.branch}`;
   const response = await fetch(api, { headers: { Accept: 'application/vnd.github+json' } });
-  if (!response.ok) throw new Error('Unable to read article directory from GitHub API');
-  const files = (await response.json()).filter((item) => item.type === 'file' && item.name.endsWith('.md'));
-  return files.map((file) => ({ slug: slugFromPath(file.path), url: file.download_url }));
+  if (!response.ok) throw new Error('Unable to load articles from GitHub API.');
+  const payload = await response.json();
+  const files = payload.filter((item) => item.type === 'file' && item.name.endsWith('.md'));
+
+  return files.map((file) => ({
+    slug: slugFromPath(file.path),
+    path: file.path,
+    url: file.download_url || `https://raw.githubusercontent.com/${CONFIG.owner}/${CONFIG.repo}/${CONFIG.branch}/${file.path}`
+  }));
 }
 
 function renderMarkdown(md) {
-  const escaped = md
-    .replace(/\r\n/g, '\n')
+  const escaped = escapeHtml(md)
     .replace(/^###\s+(.*)$/gm, '<h3>$1</h3>')
     .replace(/^##\s+(.*)$/gm, '<h2>$1</h2>')
     .replace(/^#\s+(.*)$/gm, '<h1>$1</h1>')
@@ -57,54 +77,77 @@ function renderMarkdown(md) {
 
   const lines = escaped.split('\n');
   let inList = false;
+
   const html = lines.map((line) => {
     if (/^\s*[-*]\s+/.test(line)) {
       const item = line.replace(/^\s*[-*]\s+/, '');
-      if (!inList) { inList = true; return `<ul><li>${item}</li>`; }
+      if (!inList) {
+        inList = true;
+        return `<ul><li>${item}</li>`;
+      }
       return `<li>${item}</li>`;
     }
+
     if (inList) {
       inList = false;
       if (!line.trim()) return '</ul>';
       return `</ul>${line.trim() ? `<p>${line}</p>` : ''}`;
     }
+
     if (!line.trim()) return '';
     if (/^<h\d|^<blockquote/.test(line)) return line;
     return `<p>${line}</p>`;
   }).join('');
+
   return inList ? `${html}</ul>` : html;
+}
+
+function syncFormLinks() {
+  document.querySelectorAll('[data-submit-article-link]').forEach((link) => {
+    link.setAttribute('href', ARTICLE_FORM_URL);
+  });
+  document.querySelectorAll('[data-membership-link]').forEach((link) => {
+    link.setAttribute('href', MEMBERSHIP_FORM_URL);
+  });
 }
 
 async function loadJournalPage() {
   const container = document.getElementById('articlesGrid');
   if (!container) return;
+
   container.innerHTML = '<p>Loading articles…</p>';
+
   try {
     const list = await getArticleIndex();
+
     if (!list.length) {
       container.innerHTML = '<div class="empty-state">No articles yet. Use <strong>/admin</strong> to publish the first article.</div>';
       return;
     }
+
     const articles = await Promise.all(list.map(async (item) => {
       const raw = await fetchMarkdownByUrl(item.url);
       const { data, body } = parseFrontmatter(raw);
+      const excerpt = body.slice(0, 190).replace(/[#>*_`-]/g, '').trim();
+
       return {
         slug: item.slug,
         title: data.title || item.slug,
         author: data.author || 'GEOPOLIS Editorial Board',
         date: data.date || '',
         category: data.category || 'General',
-        excerpt: body.slice(0, 190).replace(/[#>*_`-]/g, '').trim() + '…'
+        excerpt: `${excerpt}${excerpt.length >= 180 ? '…' : ''}`
       };
     }));
 
     articles.sort((a, b) => new Date(b.date) - new Date(a.date));
+
     container.innerHTML = articles.map((article) => `
       <article class="article-card">
         <div class="meta"><span class="category">${article.category}</span><span>${formatDate(article.date)}</span></div>
         <h3>${article.title}</h3>
         <p><strong>${article.author}</strong></p>
-        <p>${article.excerpt}</p>
+        <p>${article.excerpt || 'Open the article to read more.'}</p>
         <a class="btn btn--outline" href="article.html?id=${encodeURIComponent(article.slug)}">Read Article</a>
       </article>
     `).join('');
@@ -116,18 +159,26 @@ async function loadJournalPage() {
 async function loadArticlePage() {
   const articleHost = document.getElementById('articleContainer');
   if (!articleHost) return;
+
   const slug = new URLSearchParams(window.location.search).get('id');
   if (!slug) {
     articleHost.innerHTML = '<div class="empty-state">Missing article ID. Return to the journal page and choose an article.</div>';
     return;
   }
+
   articleHost.innerHTML = '<p>Loading article…</p>';
+
   try {
     const list = await getArticleIndex();
     const target = list.find((item) => item.slug === slug);
-    if (!target) throw new Error('Article not found.');
+
+    if (!target) {
+      throw new Error('Article not found.');
+    }
+
     const raw = await fetchMarkdownByUrl(target.url);
     const { data, body } = parseFrontmatter(raw);
+
     articleHost.innerHTML = `
       <header class="article-header">
         <p class="kicker">${data.category || 'Journal Article'}</p>
@@ -142,6 +193,7 @@ async function loadArticlePage() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  syncFormLinks();
   loadJournalPage();
   loadArticlePage();
 });
