@@ -1,12 +1,12 @@
 backend:
   name: github
-  repo: Anandkumarjha11110/geopolis-site
+  repo: anandkumarjha11110/geopolis-site
   branch: main
   base_url: https://geopolis-oauth.anandkumarjha11110.workers.dev
   site_domain: geopolis-site.anandkumarjha11110.workers.dev
 
-media_folder: "images/uploads"
-public_folder: "/images/uploads"
+media_folder: "assets/images"
+public_folder: "/assets/images"
 
 collections:
   - name: "articles"
@@ -16,5 +16,7 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
       - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Category", name: "category", widget: "select", options: ["Geopolitics", "IR", "Policy", "Opinion"] }
       - { label: "Body", name: "body", widget: "markdown" }
