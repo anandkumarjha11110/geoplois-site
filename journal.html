@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Journal | GEOPOLIS</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal & Repository | GEOPOLIS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container navbar__inner">
-      <a href="index.html" class="brand">GEOPOLIS Society</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="journal.html" class="active">Journal</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <a class="btn btn--gold" href="/admin/#/?local_backend=true">Write Article</a>
-    </div>
-  </nav>
+<nav class="navbar"><div class="container navbar__inner"><a href="index.html" class="brand">GEOPOLIS Society</a>
+<ul class="nav-links desktop-only"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="journal.html" class="active">Publications</a></li><li><a href="events.html">Events</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li></ul>
+<a class="btn btn--gold desktop-only" href="/admin/#/?local_backend=true">Admin Panel</a><button id="navToggle" class="nav-toggle" aria-expanded="false">☰</button></div>
+<div id="mobileMenu" class="mobile-menu"><a href="index.html">Home</a><a href="about.html">About</a><a href="journal.html">Publications</a><a href="events.html">Events</a><a href="team.html">Team</a><a href="contact.html">Contact</a></div></nav>
 
-  <section class="page-hero">
-    <div class="container">
-      <p class="kicker">GEOPOLIS Journal</p>
-      <h1>Research Publications</h1>
-      <p>Browse peer-oriented articles authored by students and contributors. New entries appear automatically after publication to GitHub.</p>
-    </div>
-  </section>
+<section class="page-hero"><div class="container"><p class="kicker">Research Platform</p><h1>Journal, Policy Writing & Dissertation Repository</h1><p>Search across research articles, policy briefs, opinion, book reviews, and batch-wise dissertations.</p></div></section>
 
-  <section class="section section--light">
-    <div class="container">
-      <div class="btn-row">
-        <a class="btn btn--gold" href="/admin/#/?local_backend=true">Write Article</a>
-        <a class="btn btn--outline" href="submit-article.html" data-submit-article-link>Submit Article</a>
-      </div>
-      <div id="articlesGrid" class="articles-grid"></div>
+<section class="section section--light"><div class="container">
+  <div class="filters">
+    <input id="searchInput" type="search" placeholder="Smart search: title, author, keyword, topic...">
+    <div class="grid grid-3">
+      <select id="categoryFilter"><option>All</option><option>Research Articles</option><option>Policy Briefs</option><option>Opinion</option><option>Book Reviews</option></select>
+      <select id="batchFilter"><option>All</option><option>2023–25</option><option>2024–26</option></select>
+      <a class="btn btn--outline" href="submit-article.html" data-submit-article-link>Submit for Review</a>
     </div>
-  </section>
+  </div>
 
-  <footer class="footer">
-    <div class="container">© 2026 GEOPOLIS Society · Updated automatically from GitHub content</div>
-  </footer>
-  <script src="script.js"></script>
-</body>
-</html>
+  <div class="section-head"><h2>Journal Publications</h2></div>
+  <div id="articlesGrid" class="grid grid-3"></div>
+
+  <div id="dissertations" class="section-head" style="margin-top:2rem;"><h2>Dissertation Archive</h2></div>
+  <div id="dissertationGrid" class="grid grid-3"></div>
+</div></section>
+
+<footer class="footer"><div class="container"><small>© 2026 GEOPOLIS Society</small></div></footer>
+<script src="script.js"></script>
+</body></html>
