@@ -1,67 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Submit Article | GEOPOLIS</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container navbar__inner">
-      <a href="index.html" class="brand">GEOPOLIS Society</a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="journal.html">Journal</a></li>
-        <li><a href="events.html">Events</a></li>
-        <li><a href="team.html">Team</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <a class="btn btn--gold" href="membership.html" data-membership-link>Apply for Membership</a>
-    </div>
-  </nav>
-
-  <section class="page-hero">
-    <div class="container">
-      <p class="kicker">Public Submission Portal</p>
-      <h1>Submit an Article</h1>
-      <p>Use this form to send a draft to the editorial board. Published articles are reviewed and then released through the CMS.</p>
-    </div>
-  </section>
-
-  <section class="section section--light">
-    <div class="container form-shell">
-      <form class="site-form" action="https://formsubmit.co/geopolis.pub@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="New GEOPOLIS Article Submission" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_next" value="/thank-you.html" />
-
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" required />
-
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required />
-
-        <label for="articleTitle">Article Title</label>
-        <input id="articleTitle" name="article_title" type="text" required />
-
-        <label for="category">Category</label>
-        <input id="category" name="category" type="text" placeholder="Geopolitics / IR / Policy / Opinion" required />
-
-        <label for="content">Article Content</label>
-        <textarea id="content" name="article_content" rows="12" required></textarea>
-
-        <button class="btn btn--gold" type="submit">Submit Article</button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="footer"><div class="container">© 2026 GEOPOLIS Society</div></footer>
-  <script src="script.js"></script>
+<nav class="navbar"><div class="container navbar__inner"><a href="index.html" class="brand">GEOPOLIS Society</a><ul class="nav-links desktop-only"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="journal.html">Publications</a></li><li><a href="events.html">Events</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li></ul><button id="navToggle" class="nav-toggle" aria-expanded="false">☰</button></div><div id="mobileMenu" class="mobile-menu"><a href="index.html">Home</a><a href="journal.html">Publications</a></div></nav>
+<section class="page-hero"><div class="container"><p class="kicker">Submission System</p><h1>Submit for Editorial Review</h1><p>Workflow: Draft → Review → Publish using CMS moderation.</p></div></section>
+<section class="section section--light"><div class="container" style="max-width:760px;"><form class="site-form" action="https://formsubmit.co/geopolis.pub@gmail.com" method="POST" enctype="multipart/form-data"><input type="hidden" name="_subject" value="New GEOPOLIS Article Submission"><input type="hidden" name="_captcha" value="false"><input type="hidden" name="_next" value="/thank-you.html"><label>Name</label><input name="name" required><label>Email</label><input type="email" name="email" required><label>Category</label><select name="category" required><option value="">Select category</option><option>Research Articles</option><option>Policy Briefs</option><option>Opinion</option><option>Book Reviews</option></select><label>Title</label><input name="article_title" required><label>Abstract</label><textarea name="abstract" rows="5" required></textarea><label>Upload document (doc/pdf)</label><input type="file" name="manuscript" accept=".pdf,.doc,.docx" required><button class="btn btn--gold" type="submit">Submit Article</button></form></div></section>
+<footer class="footer"><div class="container"><small>© 2026 GEOPOLIS Society</small></div></footer><script src="script.js"></script>
 </body>
 </html>

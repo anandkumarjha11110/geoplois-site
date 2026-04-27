@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GEOPOLIS Society</title>
+  <title>GEOPOLIS Society | Pondicherry University</title>
+  <meta name="description" content="GEOPOLIS Society is an academic platform for research publications, policy debates, and dissertation archives in the Department of Politics & International Studies, Pondicherry University.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"GEOPOLIS Society","url":"https://geopolis.site","parentOrganization":"Pondicherry University"}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -13,40 +15,80 @@
   <nav class="navbar">
     <div class="container navbar__inner">
       <a href="index.html" class="brand">GEOPOLIS Society</a>
-      <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li><li><a href="about.html">About</a></li><li><a href="journal.html">Journal</a></li><li><a href="events.html">Events</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li>
+      <ul class="nav-links desktop-only">
+        <li><a href="index.html" class="active">Home</a></li><li><a href="about.html">About</a></li><li><a href="journal.html">Publications</a></li><li><a href="events.html">Events</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li>
       </ul>
-      <a class="btn btn--gold" href="membership.html" data-membership-link>Apply for Membership</a>
+      <div class="btn-row desktop-only"><a class="btn btn--gold" href="journal.html">Explore Journal</a><a class="btn btn--outline" href="submit-article.html" data-submit-article-link>Submit Article</a></div>
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="journal.html">Publications</a><a href="events.html">Events</a><a href="team.html">Team</a><a href="contact.html">Contact</a><a href="submit-article.html" data-submit-article-link>Submit Article</a>
     </div>
   </nav>
 
   <header class="hero">
     <div class="container">
-      <p class="kicker">GEOPOLITICS · IR · PUBLIC POLICY</p>
-      <h1>The GEOPOLIS Journal Platform</h1>
-      <p>A student-led academic society at Pondicherry University focused on geopolitics, governance, and policy research.</p>
+      <p class="kicker">Department of Politics & International Studies · Pondicherry University</p>
+      <h1>To think critically, write rigorously, and engage purposefully.</h1>
+      <p>GEOPOLIS is a research-driven academic society advancing publications, dissertations, policy dialogue, and scholarly collaboration.</p>
       <div class="btn-row" style="justify-content:center;">
-        <a href="journal.html" class="btn btn--gold">Read Journal</a>
-        <a href="submit-article.html" data-submit-article-link class="btn btn--outline">Submit Article</a>
+        <a class="btn btn--gold" href="journal.html">Explore Journal</a>
+        <a class="btn btn--outline" href="submit-article.html" data-submit-article-link>Submit Article</a>
       </div>
     </div>
   </header>
 
   <section class="section">
     <div class="container">
-      <p class="kicker">About GEOPOLIS</p>
-      <h2>Research for strategic thinking</h2>
-      <p>GEOPOLIS Society is a student-led initiative at Pondicherry University, focused on rigorous writing, policy analysis, and geopolitical literacy.</p>
-      <div class="grid grid-3" style="margin-top:1.2rem;">
-        <div class="card"><h3>Publish</h3><p>From draft to dissemination — publish with scholarly precision..</p></div>
-        <div class="card"><h3>Review</h3><p>Build editorial standards for serious academic contributions.</p></div>
-        <div class="card"><h3>Engage</h3><p>Participate in debates, events, workshops, and policy dialogues.</p></div>
+      <div class="section-head"><h2>Featured Articles</h2><a href="journal.html">View all →</a></div>
+      <div id="featuredArticles" class="grid grid-3"></div>
+    </div>
+  </section>
+
+  <section class="section section--light">
+    <div class="container grid grid-2">
+      <div class="card"><h3>Research</h3><p>Long-form scholarly articles with abstracts, keywords, and downloadable citations.</p></div>
+      <div class="card"><h3>Policy Briefs</h3><p>Concise analysis on governance and strategy issues.</p></div>
+      <div class="card"><h3>Opinion</h3><p>Argumentative commentary rooted in evidence.</p></div>
+      <div class="card"><h3>Book Reviews</h3><p>Critical reviews of texts in international studies and politics.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container dual">
+      <div>
+        <p class="kicker">About GEOPOLIS</p>
+        <h2>Academic credibility with institutional continuity</h2>
+        <p>GEOPOLIS Society is anchored in the Department of Politics & International Studies, Pondicherry University, with a constitution-backed governance system, editorial standards, and cohort-based transfer of responsibilities.</p>
       </div>
+      <aside class="sidebar-card">
+        <h3>Newsletter</h3>
+        <p>Receive event alerts, publication calls, and policy round-up emails.</p>
+        <form class="site-form" action="https://formsubmit.co/geopolis.pub@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Newsletter Subscription - GEOPOLIS">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="email" name="email" required placeholder="Your email address">
+          <button class="btn btn--gold" type="submit">Subscribe</button>
+        </form>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--light">
+    <div class="container">
+      <div class="section-head"><h2>Upcoming Events</h2><a href="events.html">All events →</a></div>
+      <div id="eventSlider" class="grid grid-3"></div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container">© 2026 GEOPOLIS Society | Pondicherry University · <a href="/admin/#/?local_backend=true">Write Article</a></div>
+    <div class="container footer-grid">
+      <div><h3>About GEOPOLIS</h3><p>A student-led, faculty-guided society for serious research and policy engagement.</p></div>
+      <div><h4>Navigation</h4><p><a href="about.html">About</a><br><a href="journal.html">Publications</a><br><a href="events.html">Events</a></p></div>
+      <div><h4>Publications</h4><p><a href="journal.html">Research Articles</a><br><a href="journal.html#dissertations">Dissertation Archive</a><br><a href="submit-article.html">Submission Portal</a></p></div>
+      <div><h4>Connect</h4><p><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a><br><a href="contact.html">Join Society</a></p></div>
+    </div>
+    <div class="container"><small>© 2026 GEOPOLIS Society, Pondicherry University</small></div>
   </footer>
   <script src="script.js"></script>
 </body>
