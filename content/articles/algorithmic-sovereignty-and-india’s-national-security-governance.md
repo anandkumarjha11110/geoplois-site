@@ -4,29 +4,18 @@ author: Anand Kumar, M.A (Department of Politics & International Studies,
   Pondicherry University)
 date: 2026-04-27T20:43:00.000+05:30
 category: Research Articles
-abstract: >
-  Artificial intelligence is transforming how states manage security and
-  governance. AI systems now assist in cyber defence, surveillance, border
-  monitoring, and intelligence analysis. These technologies increase state
-  capacity but also raise concerns about accountability and institutional
-  oversight. For India, this transformation is particularly significant because
-  the country faces multiple security challenges, including cross-border
-  terrorism, cyber threats, territorial disputes, and information warfare.
-
-  Existing research on AI and national security mainly focuses on technological powers such as the United States and China. Much less attention is given to how emerging powers incorporate AI into their governance institutions. In India’s case, the debate often concentrates on technological adoption or innovation policy. However, the institutional consequences of AI integration for national security governance remain insufficiently explored.
-
-  This paper asks: how is artificial intelligence reshaping India’s national security governance, and what institutional safeguards are required to manage AI-driven security systems responsibly?
-
-  The paper argues that India is gradually moving toward algorithmic sovereignty, meaning the ability of the state to control critical data infrastructures and AI capabilities relevant to security governance. This transition strengthens strategic autonomy and improves decision-making capacity. At the same time, it creates governance gaps related to transparency, institutional coordination, and oversight of automated decision systems.
-
-  The study adopts an institutional and policy analysis approach. It examines national policy documents, cybersecurity frameworks, and digital governance initiatives to understand how AI is being incorporated into India’s security architecture.
-
-  The paper concludes that effective AI governance requires stronger regulatory oversight, institutional coordination, and safeguards for civil liberties. Building such mechanisms will be crucial for integrating AI into India’s national security framework while preserving democratic accountability.
+abstract: ""
 keywords: "Keywords: Artificial Intelligence Governance, Algorithmic
   Sovereignty, India’s National Security, Cyber Security, Digital Governance,
   Strategic Autonomy"
 ---
-
+## Abstract
+Artificial intelligence is transforming how states manage security and governance. AI systems now assist in cyber defence, surveillance, border monitoring, and intelligence analysis. These technologies increase state capacity but also raise concerns about accountability and institutional oversight. For India, this transformation is particularly significant because the country faces multiple security challenges, including cross-border terrorism, cyber threats, territorial disputes, and information warfare.
+Existing research on AI and national security mainly focuses on technological powers such as the United States and China. Much less attention is given to how emerging powers incorporate AI into their governance institutions. In India’s case, the debate often concentrates on technological adoption or innovation policy. However, the institutional consequences of AI integration for national security governance remain insufficiently explored.
+This paper asks: how is artificial intelligence reshaping India’s national security governance, and what institutional safeguards are required to manage AI-driven security systems responsibly?
+The paper argues that India is gradually moving toward algorithmic sovereignty, meaning the ability of the state to control critical data infrastructures and AI capabilities relevant to security governance. This transition strengthens strategic autonomy and improves decision-making capacity. At the same time, it creates governance gaps related to transparency, institutional coordination, and oversight of automated decision systems.
+The study adopts an institutional and policy analysis approach. It examines national policy documents, cybersecurity frameworks, and digital governance initiatives to understand how AI is being incorporated into India’s security architecture.
+The paper concludes that effective AI governance requires stronger regulatory oversight, institutional coordination, and safeguards for civil liberties. Building such mechanisms will be crucial for integrating AI into India’s national security framework while preserving democratic accountability.
 
 # 1. Introduction
 
