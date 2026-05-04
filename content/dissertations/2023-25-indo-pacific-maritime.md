@@ -5,7 +5,7 @@ supervisor: "Dr. Suresh Pillai"
 batch: "2023–25"
 topic: "Indo-Pacific"
 abstract: "This dissertation examines maritime minilateralism, naval signaling, and supply chain chokepoints in the Indo-Pacific theatre."
-pdf: "https://example.com/dissertation-indo-pacific.pdf"
+pdf: "https://drive.google.com/file/d/1vFTopUEMJqRvgPz1PowIJN_BYtxkboTj/view?usp=drive_link"
 ---
 Author: Bill Gates | Publisher: Alfred A. Knopf, 2021 | Pages: 257
 
