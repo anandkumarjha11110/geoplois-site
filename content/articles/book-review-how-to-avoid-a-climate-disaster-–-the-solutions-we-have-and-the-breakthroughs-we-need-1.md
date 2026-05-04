@@ -6,8 +6,6 @@ author: Anand Kumar, M.A (Department of Politics & International Studies,
 date: 2026-05-04T16:09:00.000+05:30
 category: Book Review
 ---
-![](https://drive.google.com/file/d/10Sj_cpJnHglCdLtYQPYGLMGcAoILM_c2/view?usp=drive_link "Image Source: ChatGPT")
-
 **Author: Bill Gates | Publisher: Alfred A. Knopf, 2021 | Pages: 257**
 
 **Reviewed by: Anand Kumar**
