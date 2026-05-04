@@ -1,8 +1,6 @@
 ---
-title: "EFFECTIVENESS OF NEP 2020 IN HIGHER EDUCATIONAL INSTITUTIONS: A STUDY ON
-  DIGITAL EDUCATION AND TEACHER TRAINING OUTCOMES UNDER SDG 4"
-author: Karthika S, M.A (Department of Politics & International Studies,
-  Pondicherry University)
+title: "EFFECTIVENESS OF NEP 2020 IN HIGHER EDUCATIONAL INSTITUTIONS: A STUDY ON DIGITAL EDUCATION AND TEACHER TRAINING OUTCOMES UNDER SDG 4"
+author: Karthika S, M.A (Department of Politics & International Studies, Pondicherry University)
 date: 2026-05-04T21:10:00.000+05:30
 category: Research Articles
 ---
@@ -10,7 +8,7 @@ category: Research Articles
 
 The National Education Policy (NEP) 2020 Introduced by the ministry of education, is a transformative reform aimed at restructuring India’s education system. India ’s learning setup was shaken up when the new education plan arrived, Schools are meant to blend face-to-face lessons with web resources such as DIKSHA and SWAYAM. A credit storage system launches, checks often occur during terms, and management runs on digital rails. This shift helps reduce student exits without degrees; even those leaving midway walk away with something valid. The survey data from 55 faculty members across government universities, government colleges, private universities, and autonomous colleges. Technology is being used to supplement existing methods, not change them. It means inclusivity depends on broader socio-economic factors. With changes, digital education can move from being just a supplement to becoming a transformative force in education.
 
-KEYWORDS:
+**KEYWORDS:**
 National Education Policy (NEP), digital tools, technology, teaching, policy development, platforms.
 
 # INTRODUCTION:
@@ -48,8 +46,8 @@ The research is mostly descriptive in nature, with an emphasis on analyzing awar
  Given the limited time and accessibility constraints during the fieldwork period, convenience sampling was used in the study. The questionnaire study involved 55 faculty members from higher education institutions. Additionally, 9 faculty members were interviewed to gain qualitative observations. Respondents represented both public and private higher education institutions and had varied levels of teaching experience. The diversity of institutional backgrounds and professional expertise enabled comparative understanding across various institutional contexts. 
 
 # Data Collection Instruments
-# Two main tools were utilized for gathering data:
-# Structured Questionnaire (Google Form):
+**Two main tools were utilized for gathering data:**
+**Structured Questionnaire (Google Form):**
 
 The questionnaire comprised 18 structured queries, which included both multiple-choice and short-answer questions. The questions were arranged into thematic sections that addressed awareness of NEP 2020, digital infrastructure, the use of digital tools, teacher training, challenges, inclusion, and gaps in policy.
 
@@ -126,25 +124,25 @@ Overall, NEP 2020's digital reform is a work in progress. It's happening, but it
 
 # RECOMMENDATIONS: 
 
-1. Improvement of Digital Infrastructure
+**1. Improvement of Digital Infrastructure**
 First, improving digital infrastructure in higher education is essential. Many respondents highlighted problems like weak internet connection, a shortage of smart classrooms, and insufficient technology resources. Therefore, it is important to prioritize specific funding and infrastructure grants, particularly for government and state universities.
 
-2. Reducing Teacher-Student Ratio
+**2. Reducing Teacher-Student Ratio**
 Next, the government should address faculty shortages by hiring more teaching staff to lower the teacher-student ratio. A balanced ratio is crucial for effective blended and digital learning because it fosters personal interactions, ongoing assessments, and improved academic mentoring. Meeting staffing levels in line with both national and international norms would significantly raise the quality of education.
 
-3. Structured and Continuous Teacher Training
+**3. Structured and Continuous Teacher Training**
 It is necessary to establish structured and ongoing teacher training programs instead of only hosting one-time workshops. Educators have expressed concerns about unclear and inconsistent guidance regarding NEP 2020. Regular professional development opportunities focusing on digital teaching methods, blended learning strategies, and inclusive teaching would increase teachers' preparedness and confidence.
 
-4. Modernisation of Assessment Methods
+**4. Modernisation of Assessment Methods**
 There is a need to improve and modernize assessment methods to match changes in digital education. The government and universities should develop transparent, technology-based, and skills-focused assessment frameworks that move beyond traditional memorization. This will ensure that digital education leads to measurable academic results while maintaining academic integrity.
 
-5. Monitoring and Accountability Mechanisms
+**5. Monitoring and Accountability Mechanisms**
 Stronger monitoring and accountability systems are necessary to bridge the gap between policy and practice. Although NEP 2020 provides a thorough framework, its implementation can differ widely among institutions. It is important to create institutional mechanisms to ensure effective execution.
 
-6. Digital Inclusion and Equity
+**6. Digital Inclusion and Equity**
 Tackling digital inclusion needs a more proactive approach. Students from rural areas and those from low-income backgrounds still encounter barriers because of the digital divide. Institutions should set up support systems like device lending programs, subsidized internet access, and on-campus digital resource centers to promote equal access for everyone.
 
-7. Clear Communication and Coordination
+**7. Clear Communication and Coordination**
 Additionally, clearer communication between the Ministry of Education, university administrations, and faculty is crucial. Increasing transparency in policy guidelines and defining roles more clearly can help reduce confusion and improve collaboration among institutions.
 
 # CONCLUSION:
