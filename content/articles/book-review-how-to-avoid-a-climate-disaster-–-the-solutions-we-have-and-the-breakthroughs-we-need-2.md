@@ -1,8 +1,6 @@
 ---
-title: "Book Review: How to Avoid a Climate Disaster – The Solutions We Have and
-  the Breakthroughs We Need "
-author: Anand Kumar, M.A (Department of Politics & International Studies,
-  Pondicherry University)
+title: "Book Review: How to Avoid a Climate Disaster – The Solutions We Have and the Breakthroughs We Need "
+author: Anand Kumar, M.A (Department of Politics & International Studies, Pondicherry University)
 date: 2026-05-04T16:24:00.000+05:30
 category: Book Review
 ---
