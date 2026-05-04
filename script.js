@@ -256,11 +256,13 @@ async function loadArticlePage() {
   const related = articles.filter((a) => a.slug !== slug && (a.category === article.category || a.tags.some((t) => article.tags.includes(t)))).slice(0, 3);
 
   host.innerHTML = `
-    <header class="article-header">
-      ${article.image ? `
-        <img src="${article.image}" 
-             style="width:100%; border-radius:12px; margin-bottom:20px;">
-      ` : ''}
+   <p class="kicker">${article.category}</p>
+<h1>${article.title}</h1>
+
+${article.image ? `
+  <img src="${article.image}" 
+       style="width:100%; border-radius:12px; margin:20px 0;">
+` : ''}
       <p class="kicker">${article.category}</p>
       <h1>${article.title}</h1>
       <p class="meta">By ${article.author} · ${formatDate(article.date)} · ${readTime(article.body)}</p>
