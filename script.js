@@ -125,7 +125,6 @@ async function loadArticles() {
       category: data.category || 'Research Articles',
       keywords: (data.keywords || '').split(',').map((k) => k.trim()).filter(Boolean),
       tags: (data.tags || '').split(',').map((k) => k.trim()).filter(Boolean),
-      abstract: data.abstract || body.slice(0, 220),
       pdf: data.pdf || '',
       status: data.status || 'publish',
       body
