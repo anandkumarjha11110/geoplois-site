@@ -264,8 +264,7 @@ ${article.image ? `
        style="width:100%; border-radius:12px; margin:20px 0;">
 ` : ''}
       <p class="meta">By ${article.author} · ${formatDate(article.date)} · ${readTime(article.body)}</p>
-      <p><strong>Keywords:</strong> ${article.keywords.join(', ') || 'General'}</p>
-      <p><strong>Abstract:</strong> ${article.abstract}</p>
+      
       <div class="btn-row">
         ${article.pdf ? `<a class="btn btn--gold" href="${article.pdf}" target="_blank" rel="noopener">Download PDF</a>` : ''}
         <button id="copyApa" class="btn btn--ghost" type="button">Copy APA</button>
