@@ -263,8 +263,6 @@ ${article.image ? `
   <img src="${article.image}" 
        style="width:100%; border-radius:12px; margin:20px 0;">
 ` : ''}
-      <p class="kicker">${article.category}</p>
-      <h1>${article.title}</h1>
       <p class="meta">By ${article.author} · ${formatDate(article.date)} · ${readTime(article.body)}</p>
       <p><strong>Keywords:</strong> ${article.keywords.join(', ') || 'General'}</p>
       <p><strong>Abstract:</strong> ${article.abstract}</p>
