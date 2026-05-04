@@ -8,7 +8,7 @@ image: https://media.licdn.com/dms/image/v2/D4D03AQHOegtPuaV4GA/profile-displayp
 
 **Author: Bill Gates | Publisher: Alfred A. Knopf, 2021 | Pages: 257**
 
-**Reviewed by: Anand Kumar**
+**Reviewed by: Anand Kumar.**
 
 **Overview and Core Argument**
 
