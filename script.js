@@ -127,6 +127,7 @@ async function loadArticles() {
       tags: (data.tags || '').split(',').map((k) => k.trim()).filter(Boolean),
       pdf: data.pdf || '',
       status: data.status || 'publish',
+      image: data.image || '',   // ✅ ADDED
       body
     };
   }));
@@ -256,6 +257,10 @@ async function loadArticlePage() {
 
   host.innerHTML = `
     <header class="article-header">
+      ${article.image ? `
+        <img src="${article.image}" 
+             style="width:100%; border-radius:12px; margin-bottom:20px;">
+      ` : ''}
       <p class="kicker">${article.category}</p>
       <h1>${article.title}</h1>
       <p class="meta">By ${article.author} · ${formatDate(article.date)} · ${readTime(article.body)}</p>
