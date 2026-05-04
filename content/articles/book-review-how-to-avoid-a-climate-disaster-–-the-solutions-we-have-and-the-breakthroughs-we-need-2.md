@@ -1,12 +1,9 @@
 ---
-title: "Book Review: How to Avoid a Climate Disaster – The Solutions We Have and
-  the Breakthroughs We Need "
-author: Anand Kumar, M.A (Department of Politics & International Studies,
-  Pondicherry University)
+title: "Book Review: How to Avoid a Climate Disaster – The Solutions We Have and the Breakthroughs We Need "
+author: Anand Kumar, M.A (Department of Politics & International Studies, Pondicherry University)
 date: 2026-05-04T16:24:00.000+05:30
 category: Book Review
 ---
-![](/images/uploads/8bd9aac0-2995-4852-8160-56d7e1d9b44a.png)
 
 **Author: Bill Gates | Publisher: Alfred A. Knopf, 2021 | Pages: 257**
 
