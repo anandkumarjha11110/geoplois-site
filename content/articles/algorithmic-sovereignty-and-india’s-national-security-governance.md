@@ -4,8 +4,6 @@ author: Anand Kumar, M.A (Department of Politics & International Studies,
   Pondicherry University)
 date: 2026-04-27T20:43:00.000+05:30
 category: Research Articles
-abstract: ""
-keywords: ""
 ---
 ## Abstract
 
