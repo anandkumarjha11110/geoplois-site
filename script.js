@@ -51,7 +51,8 @@ function renderMarkdown(md) {
     .replace(/^>\s+(.*)$/gm, '<blockquote>$1</blockquote>')
     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*(.*?)\*/g, '<em>$1</em>')
-    .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+    .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>')
+.replace(/!\[(.*?)\]\((.*?)\)/g, '<img src="$2" alt="$1" style="width:100%; border-radius:12px; margin:20px 0;">')
 
   const lines = escaped.split('\n');
   let inList = false;
