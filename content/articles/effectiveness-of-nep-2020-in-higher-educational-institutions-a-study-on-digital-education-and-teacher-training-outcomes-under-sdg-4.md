@@ -1,17 +1,19 @@
 ---
-title: "EFFECTIVENESS OF NEP 2020 IN HIGHER EDUCATIONAL INSTITUTIONS: A STUDY ON DIGITAL EDUCATION AND TEACHER TRAINING OUTCOMES UNDER SDG 4"
-author: Karthika S, M.A (Department of Politics & International Studies, Pondicherry University)
+title: "EFFECTIVENESS OF NEP 2020 IN HIGHER EDUCATIONAL INSTITUTIONS: A STUDY ON
+  DIGITAL EDUCATION AND TEACHER TRAINING OUTCOMES UNDER SDG 4"
+author: Karthika S, M.A (Department of Politics & International Studies,
+  Pondicherry University)
 date: 2026-05-04T21:10:00.000+05:30
 category: Research Articles
 ---
-# ABSTRACT: 
+## ABSTRACT:
 
 The National Education Policy (NEP) 2020 Introduced by the ministry of education, is a transformative reform aimed at restructuring India’s education system. India ’s learning setup was shaken up when the new education plan arrived, Schools are meant to blend face-to-face lessons with web resources such as DIKSHA and SWAYAM. A credit storage system launches, checks often occur during terms, and management runs on digital rails. This shift helps reduce student exits without degrees; even those leaving midway walk away with something valid. The survey data from 55 faculty members across government universities, government colleges, private universities, and autonomous colleges. Technology is being used to supplement existing methods, not change them. It means inclusivity depends on broader socio-economic factors. With changes, digital education can move from being just a supplement to becoming a transformative force in education.
 
 **KEYWORDS:**
 National Education Policy (NEP), digital tools, technology, teaching, policy development, platforms.
 
-# INTRODUCTION:
+## INTRODUCTION:
 
 Ten years ago, change began spreading through colleges worldwide, driven by technology. Instead of just classrooms, schools now incorporate online tools into daily work. Screen-based teaching has gained popularity because it opens doors, adapts to schedules, and improves results. India ’s learning setup was shaken up when the new education plan arrived in 2020. The update aimed to reshape what students' study, how campuses run, and how technology fits into everything. Schools are meant to blend face-to-face lessons with web resources such as DIKSHA and SWAYAM. A credit storage system launches, checks often occur during terms, and management runs on digital rails.
 
@@ -22,7 +24,7 @@ Most past work sheds light on policies and general hurdles, yet some areas remai
 
 Looking into how well colleges are putting the NEP 2020 into practice forms the core of this work. Faculty perspectives shape much of what is revealed here. Instead of relying solely on numbers, conversations with teachers add depth. Digital tools for teaching are reviewed based on their actual daily use. While policies may sound good on paper, real classrooms often tell a different story. Assessment changes are examined not in theory but through lived experiences. Staff members’ feelings of preparedness are closely tied to how smoothly new ideas take root. Institutional support plays a quiet yet decisive role in the background. Insights emerge when planning meets routine teaching moments. Numbers meet narratives to show what is actually happening in the field. Beyond announcements and goals lies the weight of daily execution.
 
-# POLICY BACKGROUND:
+## POLICY BACKGROUND:
 
 The National Education Policy 2020 (NEP 2020) represents a significant shift in India’s educational framework and strategy. The Union Cabinet approved the policy on 29 July 2020 which has replaced the National Policy on Education 1986 and aims to transform the Indian education system to better suit 21st century needs. NEP 2020 is the first comprehensive education policy of the 21st century in India. The formulation of this law followed educational reform discussions which had taken place during several decades and resulted in educational policies that began with 1968 and 1986 and 1986 which the 1992 policy later updated. The current policy emerged after extensive discussion involving stakeholder inputs from across states, educational bodies, teachers, students and the general public.
 The historical development of educational policy needs to develop new educational systems because changes in society and technology and labor market needs and global systems showed that existing educational frameworks can no longer solve present day problems. The consultation process that led to NEP 2020 involved multiple stages: in 2015, a committee under former Cabinet Secretary T. S. R. Subramanian began preliminary discussions and in 2017 a drafting committee chaired by Dr. K. Kasturirangan was constituted and a draft was released in 2019 that solicited public feedback. The NEP 2020 policy developed through extensive public consultations which produced a more inclusive and progressive educational framework.
@@ -35,35 +37,38 @@ The policy statement highlights the essential function that technological advanc
 
 Planning and execution of NEP 2020 establishes different governance levels for its operational purposes. The Ministry of Education functions as the central authority for executing policies while supervising all activities and partnerships that involve independent institutions like the University Grants Commission UGC and the All India Council for Technical Education AICTE. State governments and Union Territories must create their own action plans which will follow the recommendations of NEP. All institutions must match their internal regulations and educational programs through which they conduct training activities with the objectives outlined in the policy. The implementation process will proceed through three stages which maintain adaptive capacity for different regional and institutional needs according to the Ministry of Education Government of India and State Council of Educational Research and Training sources. Despite its comprehensive vision NEP 2020’s execution across states and institutions continues to be dynamic and evolving.
 
-# METHODOLOGY:
+## METHODOLOGY:
+
 This study used a mixed-method descriptive research approach to investigate the implementation of digital education initiatives under the NEP 2020 in higher education institutions. The mixed-methods strategy was adopted to ensure a thorough grasp of both measured trends and faculty members' subjective perceptions. By combining quantitative and qualitative data, the project aims to capture not only the breadth of digital use, but also the lived experiences of educators navigating policy changes. 
 
-# Research Design 
+## Research Design
+
 The research is mostly descriptive in nature, with an emphasis on analyzing awareness, implementation, obstacles, and institutional preparedness for digital education under NEP 2020. The study combines structured survey results with semi-structured interviews to produce analysis that is both broad and deep.
 
-# Sampling and Participants
+## Sampling and Participants
 
  Given the limited time and accessibility constraints during the fieldwork period, convenience sampling was used in the study. The questionnaire study involved 55 faculty members from higher education institutions. Additionally, 9 faculty members were interviewed to gain qualitative observations. Respondents represented both public and private higher education institutions and had varied levels of teaching experience. The diversity of institutional backgrounds and professional expertise enabled comparative understanding across various institutional contexts. 
 
-# Data Collection Instruments
+## Data Collection Instruments
+
 **Two main tools were utilized for gathering data:**
 **Structured Questionnaire (Google Form):**
 
 The questionnaire comprised 18 structured queries, which included both multiple-choice and short-answer questions. The questions were arranged into thematic sections that addressed awareness of NEP 2020, digital infrastructure, the use of digital tools, teacher training, challenges, inclusion, and gaps in policy.
 
-# Semi-Structured Interview Schedule:
+## Semi-Structured Interview Schedule:
 
 The interview guide featured six open-ended questions aimed at examining faculty experiences, perceptions regarding policy implementation, professional autonomy, obstacles in digital education, and suggestions for enhancement. The semi-structured approach permitted adaptability while ensuring thematic coherence.
 
-# Data Analysis:
+## Data Analysis:
 
 The quantitative data obtained from the questionnaire were processed using descriptive statistics, specifically frequencies and percentages. Responses were categorized into broader analytical themes, including Awareness & Implementation, Digital Infrastructure, Teacher Training, Inclusion & Inequality and policy Thematic analysis was used to explore qualitative interview data in order to identify recurring themes, common concerns, and contrasting viewpoints. The interview findings were utilized to enhance and provide context for survey results, enriching the overall research through methodological triangulation. 
 
-# Limitations:
+## Limitations:
 
 The study has a small sample size and depends on convenience sampling, which may limit its generalizability. Additionally, the brief duration of fieldwork might have restricted the overall representation of institutions. Nonetheless, the mixed-method approach offers valuable insights into the current status of digital education implementation under NEP 2020 in higher education institutions.
 
-# FINDINGS:
+## FINDINGS:
 
 In the survey, nearly 55 faculty from different educational institutions responded to how digital education under NEP 2020 is being implemented. Among them about 40% were from government universities, 27.3% from government colleges, 16.4% from private universities, and 16.4% from autonomous colleges. Teaching experience of them,56.4% had 0–5 years of experience, 21.8% had 6–10 years, and only a small percentage of faculties had more than 10 years of experience. This shows that most respondents are young teachers, find it easier to use digital tools and adapt to new technology.
 
@@ -94,35 +99,34 @@ Awareness of NEP 2020's digital provisions varies considerably based on experien
  Regarding digital education practices, the integration of technology is currently seen as an incremental rather than a structural shift. Faculty report a moderate use of digital platforms, such as SWAYAM, Google Classroom and basic presentation tools. However, these tools are primarily utilised for administrative tasks, assignment distribution, and examination-oriented preparation rather than for fundamentally reimagining pedagogy. The data indicates that digital usage often becomes mechanical or routine in nature . The curriculum itself remains largely unchanged, and the anticipated transformation in academic depth has not yet occurred. This functional adoption suggests that technology is being used to support existing systems rather than to foster the universal design for learning (UDL) as envisioned by the policy.
 
  The most critical barrier to the successful implementation of NEP 2020 is identified as the stark deficiency in both teacher and student training. While some mid-career faculty have had exposure to digital platform orientation, a significant portion of the teaching staff, particularly those newer to the service, remains entirely untrained in modern digital pedagogies. The absence of structured training opportunities and the lack of institutional follow-up mechanisms have left the faculty to navigate digital transitions independently, often leading to varied and inconsistent outcomes. Furthermore, the findings highlight a dual-sided need for training; it is not only the faculty who require upskilling but also the students, who must be trained to navigate digital tools to effectively enhance their own learning outcomes. Without a comprehensive and inclusive training framework, the digital tools provided under the NEP framework risk being under utilised.
- 
+
 The interaction of digital education and socio-economic equity reveals a complex  landscape. While digital tools possess the potential for social-emotional learning and inclusive design, their effectiveness is frequently compromised by a persistent digital divide and a chronic lack of basic infrastructure. Respondents identified insufficient government funding as a primary obstacle to creating the necessary technological environment for equitable education. Disadvantaged students continue to face significant barriers in digital access, and while individual faculty members attempt to bridge these gaps through inclusive classroom strategies, these are often localized mechanisms rather than systemic solutions. The impact of digital reforms on reducing inequality is therefore described as highly context-dependent, and without substantial investment in infrastructure, the digital shift may inadvertently exacerbate existing disparities.
 
  In conclusion, the challenges facing the digital implementation of NEP 2020 in government higher education are diverse, involving infrastructure deficits, information gaps, and a lack of institutional accountability. For a more effective implementation, there is an urgent need to clarify policy provisions and establish rigorous monitoring mechanisms at the university level. Strengthening digital infrastructure through increased funding remains a non-negotiable priority to ensure that technology is accessible to all students. Most importantly, the transition from a traditional model to a digitally integrated one requires a systematic effort to train both teachers and students. Addressing these systemic gaps is essential to ensure that the NEP 2020 does not remain a simple theoretical exercise but leads to a genuine pedagogical and social advancement within the Indian education system
 
-# INTERPRETATION:
+## INTERPRETATION:
 
 The integration of quantitative and qualitative findings reveals a nuanced pattern in the implementation of digital reforms under NEP 2020. Faculty members like the policy's digital vision, but implementation is uneven across institutions. The problem isn't resistance from teachers, it's that institutions lack the capacity to make it happen. Teachers are somewhat prepared for digital teaching, and they're using digital tools, but it's not changing how they teach.
- 
+
 Technology is being used to supplement existing methods, not change them. For example, they're using online platforms and presentation software, but the way they teach and assess students hasn't changed much. The infrastructure is a major constraint. There's a shortage of hardware, smart classrooms, and technical support. In government institutions, high student-teacher ratios make it harder to engage with students and assess them properly.
- 
+
 Training for teachers is also inconsistent. It focuses on using digital tools rather than improving teaching. This means that some teachers are picking it up quickly, while others struggle. The policy has good intentions, but there's uncertainty about how to implement it. Administrative tasks have increased, but support hasn't. There's a need for clearer guidelines and more resources.
- 
+
 Digital platforms are helping with access, but there are still inequalities. Some students have better access to devices and the internet, so they benefit more. This means inclusivity depends on broader socio-economic factors. The study suggests that the main challenge is not teachers' attitudes, but the institution's ability to support them.
- 
+
 The success of NEP 2020's digital agenda depends on strengthening institutions, not just making more policies. This includes investing in infrastructure, providing consistent training, and giving teachers the support they need. With these changes, digital education can move from being just a supplement to becoming a transformative force in education.
- 
+
 The study highlights that digital reform is a gradual process. It's not a one-size-fits-all solution, and institutions need to adapt it to their specific needs. The key is to focus on building capacity, rather than just implementing new technologies.
- 
+
 The findings suggest that there's a need for more research on how digital education is impacting different groups of students. This includes looking at how it affects students from different socio-economic backgrounds, and how it can be made more inclusive.
- 
+
 Inclusivity is key to SDG 4, but it's not happening equally. Digital tools help with access and flexibility, but disparities remain. Some students lack devices, connectivity, or digital skills. The digital divide hits students, institutions, and the system, limiting equitable education for all. Institutions need to prioritize digital literacy and provide support for students who need it. This includes providing devices and internet access, as well as training on how to use digital tools effectively.
- 
+
 The study also highlights the importance of collaboration between institutions, policymakers, and other stakeholders. By working together, they can share best practices, address challenges, and create a more effective digital education system.
- 
+
 Overall, NEP 2020's digital reform is a work in progress. It's happening, but it's limited by resources and institutional capacity. To succeed, institutions need to address these gaps and create an environment where digital education can thrive.
 
-
-# RECOMMENDATIONS: 
+## RECOMMENDATIONS:
 
 **1. Improvement of Digital Infrastructure**
 First, improving digital infrastructure in higher education is essential. Many respondents highlighted problems like weak internet connection, a shortage of smart classrooms, and insufficient technology resources. Therefore, it is important to prioritize specific funding and infrastructure grants, particularly for government and state universities.
@@ -145,17 +149,16 @@ Tackling digital inclusion needs a more proactive approach. Students from rural 
 **7. Clear Communication and Coordination**
 Additionally, clearer communication between the Ministry of Education, university administrations, and faculty is crucial. Increasing transparency in policy guidelines and defining roles more clearly can help reduce confusion and improve collaboration among institutions.
 
-# CONCLUSION:
+## CONCLUSION:
+
 The National Education Policy 2020 (NEP 2020) represents a major shift in India’s educational framework. A space for deep thinking about smart digital use across teaching spaces. Digital libraries pile up lessons, readings, and tools, all reachable anytime via internet links. With these changes, digital education can move from being just a supplement to becoming a transformative force in education. Furthermore, the academic bank of credits, promotion of research and education for easy accessibility. Looking into how well colleges are putting the NEP 2020 into practice forms the core of this work reflects the growth of opportunities and skill-oriented education. Overall, NEP2020 has the potential to reshape India’s educational framework.
 
-# REFERENCES
+## REFERENCES
 
-1.	Ministry of Education, Government of India. (n.d.). About National Education Policy. https://www.education.gov.in/en/nep/about-nep
-2.	State Council of Educational Research and Training. (n.d.). NEP 2020. https://scert.delhi.gov.in/scert/nep-2020
-3.	Dey, N. (2022). National Education Policy (NEP) 2020 on transforming education: A critical analysis of recommendations on school, teacher and higher education. Journal of Indian Education, 48(1), 187–200. https://ejournals.ncert.gov.in/index.php/jie/article/view/3170/3038
-4.	Government Source (NEP 2020) Ministry of Education. (2020). National Education Policy 2020. Government of India. https://www.education.gov.in/en/national-education-policy-2020-1
-5.	Jain & Pandey (2021) Jain, S., & Pandey, M. (2021). A critical analysis of new education policy 2020 and its future implications. ResearchGate. https://www.researchgate.net/publication/362972200_A_Critical_Analysis_of_New_Education_Policy_2020_And_It's_Future_Implications
-6.	Kumar (2021) Kumar, R. (2021). National education policy 2020: Implementation challenges. The Sentinel. https://sentinelassam.com/amp/story/more-news/editorial/national-education-policy-2020-implementation-challenges
-7.	Azim Premji University (2021 Report) Azim Premji University. (2021). Learning loss during COVID-19. https://azimpremjiuniversity.edu.in/SitePages/pdf/Learning%20loss%20during%20COVID-19%20Final.pdf
-
-
+1. Ministry of Education, Government of India. (n.d.). About National Education Policy. https://www.education.gov.in/en/nep/about-nep
+2. State Council of Educational Research and Training. (n.d.). NEP 2020. https://scert.delhi.gov.in/scert/nep-2020
+3. Dey, N. (2022). National Education Policy (NEP) 2020 on transforming education: A critical analysis of recommendations on school, teacher and higher education. Journal of Indian Education, 48(1), 187–200. https://ejournals.ncert.gov.in/index.php/jie/article/view/3170/3038
+4. Government Source (NEP 2020) Ministry of Education. (2020). National Education Policy 2020. Government of India. https://www.education.gov.in/en/national-education-policy-2020-1
+5. Jain & Pandey (2021) Jain, S., & Pandey, M. (2021). A critical analysis of new education policy 2020 and its future implications. ResearchGate. https://www.researchgate.net/publication/362972200_A_Critical_Analysis_of_New_Education_Policy_2020_And_It's_Future_Implications
+6. Kumar (2021) Kumar, R. (2021). National education policy 2020: Implementation challenges. The Sentinel. https://sentinelassam.com/amp/story/more-news/editorial/national-education-policy-2020-implementation-challenges
+7. Azim Premji University (2021 Report) Azim Premji University. (2021). Learning loss during COVID-19. https://azimpremjiuniversity.edu.in/SitePages/pdf/Learning%20loss%20during%20COVID-19%20Final.pdf
