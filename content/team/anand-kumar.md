@@ -1,5 +1,5 @@
 ---
-name: Anand Kumar
+name: Rakesh Kumar
 role: President, Geopolis Society
 course_year: M.A (POIR), 2nd Year
 research_interests: Geopolitics, International Relations, Governance, Public Policy
