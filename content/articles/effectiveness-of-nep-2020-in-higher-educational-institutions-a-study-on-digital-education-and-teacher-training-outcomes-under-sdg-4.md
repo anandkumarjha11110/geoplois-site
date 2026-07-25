@@ -158,6 +158,7 @@ The National Education Policy 2020 (NEP 2020) represents a major shift in Indiaâ
 2. State Council of Educational Research and Training. (n.d.). NEP 2020. https://scert.delhi.gov.in/scert/nep-2020
 3. Dey, N. (2022). National Education Policy (NEP) 2020 on transforming education: A critical analysis of recommendations on school, teacher and higher education. Journal of Indian Education, 48(1), 187â€“200. https://ejournals.ncert.gov.in/index.php/jie/article/view/3170/3038
 4. Government Source (NEP 2020) Ministry of Education. (2020). National Education Policy 2020. Government of India. https://www.education.gov.in/en/national-education-policy-2020-1
-5. Jain & Pandey (2021) Jain, S., & Pandey, M. (2021). A critical analysis of new education policy 2020 and its future implications. ResearchGate. https://www.researchgate.net/publication/362972200_A_Critical_Analysis_of_New_Education_Policy_2020_And_It's_Future_Implications
-6. Kumar (2021) Kumar, R. (2021). National education policy 2020: Implementation challenges. The Sentinel. https://sentinelassam.com/amp/story/more-news/editorial/national-education-policy-2020-implementation-challenges
-7. Azim Premji University (2021 Report) Azim Premji University. (2021). Learning loss during COVID-19. https://azimpremjiuniversity.edu.in/SitePages/pdf/Learning%20loss%20during%20COVID-19%20Final.pdf
+5. Jain & Pandey (2021) Jain, S., & Pandey, M. (2021). A critical analysis of new education policy 2020 and its future implications. ResearchGate. https://www.researchgate.net/publication/362972200_A_Critical_Analysis_of_New_Education_Policy_2020_
+6. And_It's_Future_Implications
+7. Kumar (2021) Kumar, R. (2021). National education policy 2020: Implementation challenges. The Sentinel. https://sentinelassam.com/amp/story/more-news/editorial/national-education-policy-2020-implementation-challenges
+8. Azim Premji University (2021 Report) Azim Premji University. (2021). Learning loss during COVID-19. https://azimpremjiuniversity.edu.in/SitePages/pdf/Learning%20loss%20during%20COVID-19%20Final.pdf
