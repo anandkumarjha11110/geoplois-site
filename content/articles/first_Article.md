@@ -1,6 +1,6 @@
 ---
 title: Digital Elections and Democratic Integrity in India - An Institutional Analysis of the Election Commission in the Social Media Era
-author: Anand Kumar, M.A (Department of Politics & International Studies, Pondicherry University)
+author: Anand Kumar, Research Scholar
 date: 2026-04-26T17:24:00Z
 category: General
 ---

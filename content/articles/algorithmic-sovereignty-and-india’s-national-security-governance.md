@@ -1,7 +1,6 @@
 ---
 title: Algorithmic Sovereignty and India’s National Security Governance
-author: Anand Kumar, M.A (Department of Politics & International Studies,
-  Pondicherry University)
+author: Anand Kumar, Research Scholar
 date: 2026-04-27T20:43:00.000+05:30
 category: Research Articles
 ---
