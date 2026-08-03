@@ -3,96 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GEOPOLIS Society | Pondicherry University</title>
-  <meta name="description" content="GEOPOLIS Society is an academic platform for research publications, policy debates, and dissertation archives in the Department of Politics & International Studies, Pondicherry University.">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"GEOPOLIS Society","url":"https://geopolis.site","parentOrganization":"Pondicherry University"}</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <title>GEOPOLIS | Global Platform for Humanities and Social Sciences</title>
+  <meta name="description" content="GEOPOLIS is an open-access digital publishing platform for high-quality scholarship in the humanities and social sciences.">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"GEOPOLIS","url":"https://geopolis.site","description":"Global Platform for Humanities and Social Sciences"}</script>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="container navbar__inner">
-      <a href="index.html" class="brand">GEOPOLIS Society</a>
-      <ul class="nav-links desktop-only">
-        <li><a href="index.html" class="active">Home</a></li><li><a href="about.html">About</a></li><li><a href="journal.html">Publications</a></li><li><a href="events.html">Events</a></li><li><a href="team.html">Team</a></li><li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="btn-row desktop-only"><a class="btn btn--gold" href="journal.html">Explore Journal</a><a class="btn btn--outline" href="submit-article.html" data-submit-article-link>Submit Article</a></div>
-      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+<nav class="navbar" aria-label="Primary navigation">
+  <div class="container navbar__inner">
+    <a href="index.html" class="brand"><span>GEOPOLIS</span><small>Global Platform for Humanities and Social Sciences</small></a>
+    <ul class="nav-links desktop-only"><li><a href="index.html" class="active" aria-current="page">Home</a></li><li><a href="journal.html">Publications</a></li><li><a href="disciplines.html">Disciplines</a></li><li><a href="authors.html">Authors</a></li><li><a href="editorial-board.html">Editorial Board</a></li><li><a href="resources.html">Resources</a></li><li><a href="submit-article.html">Submit</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul>
+    <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-label="Open menu">☰</button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu"><a href="index.html" class="active" aria-current="page">Home</a><a href="journal.html">Publications</a><a href="disciplines.html">Disciplines</a><a href="authors.html">Authors</a><a href="editorial-board.html">Editorial Board</a><a href="resources.html">Resources</a><a href="submit-article.html">Submit</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+</nav>
+<header class="hero">
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="kicker">Global Platform for Humanities and Social Sciences</p>
+      <h1>Publish Humanities Research That Matters</h1>
+      <p class="hero__lead">GEOPOLIS is an open-access digital publishing platform dedicated to publishing and disseminating high-quality scholarship across the humanities and social sciences.</p>
+      <p>This platform welcomes contributions from scholars around the world and promotes accessible, interdisciplinary academic knowledge.</p>
+      <div class="btn-row"><a class="btn btn--gold" href="submit-article.html">Publish Your Work</a><a class="btn btn--outline" href="journal.html">Explore Publications</a></div>
     </div>
-    <div id="mobileMenu" class="mobile-menu">
-      <a href="index.html">Home</a><a href="about.html">About</a><a href="journal.html">Publications</a><a href="events.html">Events</a><a href="team.html">Team</a><a href="contact.html">Contact</a><a href="submit-article.html" data-submit-article-link>Submit Article</a>
-    </div>
-  </nav>
-
-  <header class="hero">
-    <div class="container">
-      <p class="kicker">
-  Department of Politics & International Studies
-  <span class="sub">Pondicherry University</span>
-</p>
-      <h1>To think critically, write rigorously, and engage purposefully.</h1>
-      <p>GEOPOLIS is a research-driven academic society advancing publications, dissertations, policy dialogue, and scholarly collaboration.</p>
-      <div class="btn-row" style="justify-content:center;">
-        <a class="btn btn--gold" href="journal.html">Explore Journal</a>
-        <a class="btn btn--outline" href="submit-article.html" data-submit-article-link>Submit Article</a>
-      </div>
-    </div>
-  </header>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-head"><h2>Featured Articles</h2><a href="journal.html">View all →</a></div>
-      <div id="featuredArticles" class="grid grid-3"></div>
-    </div>
-  </section>
-
-  <section class="section section--light">
-    <div class="container grid grid-2">
-      <div class="card"><h3>Research</h3><p>Long-form scholarly articles with abstracts, keywords, and downloadable citations.</p></div>
-      <div class="card"><h3>Policy Briefs</h3><p>Concise analysis on governance and strategy issues.</p></div>
-      <div class="card"><h3>Opinion</h3><p>Argumentative commentary rooted in evidence.</p></div>
-      <div class="card"><h3>Book Reviews</h3><p>Critical reviews of texts in international studies and politics.</p></div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container dual">
-      <div>
-        <p class="kicker">About GEOPOLIS</p>
-        <h2>Academic credibility with institutional continuity</h2>
-        <p>GEOPOLIS Society is a student-led, institutionally anchored collective within the Department of Politics & International Studies, Pondicherry University, guided by a formally codified governance structure, rigorous editorial standards, and a structured cohort-based leadership transition.</p>
-      </div>
-      <aside class="sidebar-card">
-        <h3>Newsletter</h3>
-        <p>Receive event alerts, publication calls, and policy round-up emails.</p>
-        <form class="site-form" action="https://formsubmit.co/geopolis.pub@gmail.com" method="POST">
-          <input type="hidden" name="_subject" value="Newsletter Subscription - GEOPOLIS">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="email" name="email" required placeholder="Your email address">
-          <button class="btn btn--gold" type="submit">Subscribe</button>
-        </form>
-      </aside>
-    </div>
-  </section>
-
-  <section class="section section--light">
-    <div class="container">
-      <div class="section-head"><h2>Upcoming Events</h2><a href="events.html">All events →</a></div>
-      <div id="eventSlider" class="grid grid-3"></div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div><h3>About GEOPOLIS</h3><p>A student-led, faculty-guided society for serious research and policy engagement.</p></div>
-      <div><h4>Navigation</h4><p><a href="about.html">About</a><br><a href="journal.html">Publications</a><br><a href="events.html">Events</a></p></div>
-      <div><h4>Publications</h4><p><a href="journal.html">Research Articles</a><br><a href="journal.html#dissertations">Dissertation Archive</a><br><a href="submit-article.html">Submission Portal</a></p></div>
-      <div><h4>Connect</h4><p><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a><br><a href="contact.html">Join Society</a></p></div>
-    </div>
-    <div class="container"><small>© 2026 GEOPOLIS Society, Pondicherry University</small></div>
-  </footer>
-  <script src="script.js"></script>
-</body>
-</html>
+    <div class="hero__visual" aria-hidden="true"><div class="orb">✦</div><div><strong>Open Access</strong><span>Interdisciplinary scholarship for a global readership</span></div></div>
+  </div>
+</header>
+<section class="section"><div class="container stats-grid"><article class="stat-card"><span class="icon">▦</span><strong>120+</strong><small>Publications</small></article><article class="stat-card"><span class="icon">◉</span><strong>75+</strong><small>Authors</small></article><article class="stat-card"><span class="icon">◇</span><strong>40+</strong><small>Universities</small></article><article class="stat-card"><span class="icon">◎</span><strong>18+</strong><small>Countries</small></article><article class="stat-card"><span class="icon">⇣</span><strong>25K+</strong><small>Downloads</small></article><article class="stat-card"><span class="icon">✧</span><strong>12+</strong><small>Disciplines</small></article></div></section>
+<section class="section section--light"><div class="container"><div class="section-head"><div><p class="kicker">Latest scholarship</p><h2>Featured Publications</h2></div><a href="journal.html">View all →</a></div><div id="featuredArticles" class="grid grid-3"></div></div></section>
+<section class="section"><div class="container"><div class="section-head"><div><p class="kicker">Explore fields</p><h2>Browse by Discipline</h2></div></div><div class="grid discipline-grid"><a class="discipline-card" href="disciplines.html"><span class="icon">⚖</span><h3>Political Science</h3><p>Institutions, political theory, and governance.</p></a><a class="discipline-card" href="disciplines.html"><span class="icon">🌐</span><h3>International Relations</h3><p>Global order, diplomacy, and security studies.</p></a><a class="discipline-card" href="disciplines.html"><span class="icon">▣</span><h3>Public Policy</h3><p>Evidence-led public action and administration.</p></a><a class="discipline-card" href="disciplines.html"><span class="icon">◌</span><h3>Sociology</h3><p>Society, culture, inequality, and change.</p></a><a class="discipline-card" href="disciplines.html"><span class="icon">✊</span><h3>Human Rights</h3><p>Rights, justice, law, and advocacy.</p></a><a class="discipline-card" href="disciplines.html"><span class="icon">¶</span><h3>English</h3><p>Literature, language, and critical studies.</p></a><a class="discipline-card" href="disciplines.html"><span class="icon">⌛</span><h3>History</h3><p>Historical inquiry and archival interpretation.</p></a><a class="discipline-card" href="disciplines.html"><span class="icon">◈</span><h3>Philosophy</h3><p>Ethics, thought, and conceptual analysis.</p></a><a class="discipline-card" href="disciplines.html"><span class="icon">♀</span><h3>Gender Studies</h3><p>Gender, identity, power, and representation.</p></a></div></div></section>
+<section class="section section--light"><div class="container"><div class="section-head"><div><p class="kicker">Publication formats</p><h2>Browse by Publication Type</h2></div></div><div class="grid grid-3"><a class="card type-card" href="journal.html"><span class="icon">📄</span><h3>Research Papers</h3><p>Original scholarly articles with rigorous argumentation.</p></a><a class="card type-card" href="journal.html"><span class="icon">✍</span><h3>Essays</h3><p>Critical reflections and interpretive scholarship.</p></a><a class="card type-card" href="journal.html"><span class="icon">📚</span><h3>Book Reviews</h3><p>Scholarly reviews of important academic books.</p></a><a class="card type-card" href="journal.html"><span class="icon">◫</span><h3>Policy Briefs</h3><p>Concise research for public decision-making.</p></a><a class="card type-card" href="journal.html"><span class="icon">🧾</span><h3>Working Papers</h3><p>Early-stage research for academic conversation.</p></a><a class="card type-card" href="journal.html"><span class="icon">🎙</span><h3>Conference Papers</h3><p>Presented papers and proceedings-ready work.</p></a><a class="card type-card" href="journal.html"><span class="icon">🎓</span><h3>Dissertations</h3><p>Long-form student and early-career research.</p></a></div></div></section>
+<section class="section"><div class="container"><div class="section-head"><div><p class="kicker">Scholar community</p><h2>Featured Authors</h2></div><a href="authors.html">Browse authors →</a></div><div class="grid grid-3"><article class="author-card"><div class="avatar" aria-hidden="true">A</div><h3>Ananya Rao</h3><p><strong>Independent Researcher</strong></p><p>Political theory, democracy, public culture</p><small>4 publications</small><a class="btn btn--ghost" href="authors.html">View Profile</a></article><article class="author-card"><div class="avatar" aria-hidden="true">M</div><h3>Mateo Silva</h3><p><strong>Global Policy Institute</strong></p><p>Climate governance, development studies</p><small>3 publications</small><a class="btn btn--ghost" href="authors.html">View Profile</a></article><article class="author-card"><div class="avatar" aria-hidden="true">L</div><h3>Leila Hassan</h3><p><strong>Open Humanities Network</strong></p><p>Gender studies, postcolonial literature</p><small>2 publications</small><a class="btn btn--ghost" href="authors.html">View Profile</a></article></div></div></section>
+<section class="section newsletter"><div class="container newsletter__inner"><div><p class="kicker">Newsletter</p><h2>Stay Updated</h2><p>Subscribe to receive updates about newly published research and platform announcements.</p></div><form class="newsletter-form" action="https://formsubmit.co/geopolis.pub@gmail.com" method="POST"><input type="hidden" name="_subject" value="Newsletter Subscription - GEOPOLIS"><input type="hidden" name="_captcha" value="false"><label class="sr-only" for="newsletter-email">Email</label><input id="newsletter-email" type="email" name="email" required placeholder="Email"><button class="btn btn--gold" type="submit">Subscribe</button></form></div></section>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><h3>GEOPOLIS</h3><p>Global Platform for Humanities and Social Sciences.</p></div>
+    <div><h4>Quick Links</h4><p><a href="index.html">Home</a><br><a href="journal.html">Publications</a><br><a href="authors.html">Authors</a><br><a href="resources.html">Resources</a><br><a href="submit-article.html">Submit</a><br><a href="about.html">About</a><br><a href="contact.html">Contact</a></p></div>
+    <div><h4>Platform</h4><p><a href="about.html#mission">Mission</a><br><a href="resources.html#open-access">Open Access</a><br><a href="resources.html#editorial-policy">Editorial Policy</a><br><a href="resources.html#publication-ethics">Publication Ethics</a></p></div>
+    <div><h4>Connect</h4><p><a href="https://github.com" target="_blank" rel="noopener">GitHub</a><br><a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a><br><a href="mailto:geopolis.pub@gmail.com">Email</a></p></div>
+  </div>
+  <div class="container footer-bottom"><small>© 2026 GEOPOLIS</small><small>Global Platform for Humanities and Social Sciences</small></div>
+</footer>
+<script src="script.js"></script>
+</body></html>

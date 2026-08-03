@@ -106,11 +106,11 @@ function setupNav() {
 
 function citeAPA(article) {
   const year = article.date ? new Date(article.date).getFullYear() : 'n.d.';
-  return `${article.author} (${year}). ${article.title}. GEOPOLIS Journal.`;
+  return `${article.author} (${year}). ${article.title}. GEOPOLIS.`;
 }
 function citeMLA(article) {
   const date = article.date ? formatDate(article.date) : 'n.d.';
-  return `${article.author}. "${article.title}." GEOPOLIS Journal, ${date}.`;
+  return `${article.author}. "${article.title}." GEOPOLIS, ${date}.`;
 }
 
 async function loadArticles() {
@@ -123,7 +123,9 @@ async function loadArticles() {
       title: data.title || item.slug,
       author: data.author || 'GEOPOLIS Editorial Board',
       date: data.date || '',
-      category: data.category || 'Research Articles',
+      category: data.category || 'Research Papers',
+      abstract: data.abstract || body.replace(/[#>*_`\-]/g, '').slice(0, 220),
+      discipline: data.discipline || data.topic || 'Humanities and Social Sciences',
       keywords: (data.keywords || '').split(',').map((k) => k.trim()).filter(Boolean),
       tags: (data.tags || '').split(',').map((k) => k.trim()).filter(Boolean),
       pdf: data.pdf || '',
@@ -164,16 +166,24 @@ function updateAnalytics(key) {
 function renderFeaturedHome(articles) {
   const host = document.getElementById('featuredArticles');
   if (!host) return;
-  const latest = articles.slice(0, 6);
-  host.innerHTML = latest.map((a) => `
+  const placeholders = [
+    { category: 'Research Paper', title: 'Democracy, Public Reason, and Digital Civic Life', author: 'GEOPOLIS Editorial Desk', discipline: 'Political Science', abstract: 'A forthcoming publication exploring democratic participation, digital publics, and contemporary civic institutions.', date: '2026-08-01', slug: '' },
+    { category: 'Essay', title: 'Reading Humanities in a Connected World', author: 'GEOPOLIS Editorial Desk', discipline: 'English', abstract: 'A forthcoming essay on interdisciplinary reading practices and the public value of humanities scholarship.', date: '2026-08-01', slug: '' },
+    { category: 'Policy Brief', title: 'Open Knowledge and Equitable Research Access', author: 'GEOPOLIS Editorial Desk', discipline: 'Public Policy', abstract: 'A forthcoming brief examining open-access publishing and its role in widening scholarly participation.', date: '2026-08-01', slug: '' }
+  ];
+  const latest = [...articles.slice(0, 3), ...placeholders].slice(0, 3);
+  host.innerHTML = latest.map((a) => {
+    const href = a.slug ? `article.html?id=${encodeURIComponent(a.slug)}` : 'journal.html';
+    return `
     <article class="article-card">
       <div class="meta"><span class="category-pill">${a.category}</span><span>${formatDate(a.date)}</span></div>
-      <h3><a class="title-link" href="article.html?id=${encodeURIComponent(a.slug)}">${a.title}</a></h3>
-      <p><strong>${a.author}</strong></p>
-      <p>${escapeHtml(a.abstract).slice(0, 135)}...</p>
-      <a class="btn btn--outline" href="article.html?id=${encodeURIComponent(a.slug)}">Read</a>
-    </article>
-  `).join('');
+      <h3><a class="title-link" href="${href}">${a.title}</a></h3>
+      <p><strong>Author:</strong> ${a.author}</p>
+      <p><strong>Discipline:</strong> ${a.discipline}</p>
+      <p>${escapeHtml(a.abstract).slice(0, 150)}...</p>
+      <a class="btn btn--outline" href="${href}">Read More</a>
+    </article>`;
+  }).join('');
 }
 
 function renderJournal(articles, dissertations) {

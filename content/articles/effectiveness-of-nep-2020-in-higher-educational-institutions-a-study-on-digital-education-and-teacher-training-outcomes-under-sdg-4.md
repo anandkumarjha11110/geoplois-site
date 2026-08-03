@@ -1,6 +1,6 @@
 ---
 title: "EFFECTIVENESS OF NEP 2020 IN HIGHER EDUCATIONAL INSTITUTIONS: A STUDY ON DIGITAL EDUCATION AND TEACHER TRAINING OUTCOMES UNDER SDG 4"
-author: Karthika S, M.A (Department of Politics & International Studies, Pondicherry University)
+author: Karthika S, Research Scholar
 date: 2026-05-04T21:10:00.000+05:30
 category: Research Articles
 image: assets/images/WhatsApp Image 2026-05-04 at 10.58.26 PM.jpeg
