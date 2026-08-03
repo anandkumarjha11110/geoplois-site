@@ -104,6 +104,18 @@ function setupNav() {
   });
 }
 
+function normalizePublicationType(value = '') {
+  const map = {
+    'Research Articles': 'Research Papers',
+    'Research Article': 'Research Papers',
+    'Essay': 'Essays',
+    'Book Review': 'Book Reviews',
+    'Policy': 'Policy Briefs',
+    'IR': 'International Relations'
+  };
+  return map[value] || value || 'Research Papers';
+}
+
 function citeAPA(article) {
   const year = article.date ? new Date(article.date).getFullYear() : 'n.d.';
   return `${article.author} (${year}). ${article.title}. GEOPOLIS.`;
@@ -121,16 +133,22 @@ async function loadArticles() {
     return {
       slug: item.slug,
       title: data.title || item.slug,
-      author: data.author || 'GEOPOLIS Editorial Board',
+      author: data.author || 'GEOPOLIS Editorial Collective',
       date: data.date || '',
-      category: data.category || 'Research Papers',
+      category: normalizePublicationType(data.category || 'Research Papers'),
       abstract: data.abstract || body.replace(/[#>*_`\-]/g, '').slice(0, 220),
       discipline: data.discipline || data.topic || 'Humanities and Social Sciences',
       keywords: (data.keywords || '').split(',').map((k) => k.trim()).filter(Boolean),
       tags: (data.tags || '').split(',').map((k) => k.trim()).filter(Boolean),
+      university: data.university || data.institution || 'Independent scholar',
+      department: data.department || 'Not specified',
+      orcid: data.orcid || '',
+      country: data.country || 'Global',
+      downloads: Number(data.downloads || 0),
+      references: data.references || '',
       pdf: data.pdf || '',
       status: data.status || 'publish',
-      image: data.image || '',   // ✅ ADDED
+      image: data.image || '',
       body
     };
   }));
@@ -191,29 +209,47 @@ function renderJournal(articles, dissertations) {
   if (!host) return;
   const q = (document.getElementById('searchInput')?.value || '').toLowerCase();
   const cat = document.getElementById('categoryFilter')?.value || 'All';
-  const batch = document.getElementById('batchFilter')?.value || 'All';
+  const discipline = document.getElementById('disciplineFilter')?.value || 'All';
+  const year = document.getElementById('yearFilter')?.value || 'All';
+  const university = (document.getElementById('universityFilter')?.value || '').toLowerCase();
+  const country = (document.getElementById('countryFilter')?.value || '').toLowerCase();
+  const keyword = (document.getElementById('keywordFilter')?.value || '').toLowerCase();
+  const sort = document.getElementById('sortFilter')?.value || 'Newest';
 
   const filteredArticles = articles.filter((a) => {
-    const text = `${a.title} ${a.author} ${a.abstract} ${a.keywords.join(' ')}`.toLowerCase();
+    const publicationYear = a.date ? String(new Date(a.date).getFullYear()) : 'Undated';
+    const text = `${a.title} ${a.author} ${a.abstract} ${a.discipline} ${a.university} ${a.country} ${a.keywords.join(' ')}`.toLowerCase();
     const byQ = !q || text.includes(q);
     const byCat = cat === 'All' || a.category === cat;
-    return byQ && byCat;
+    const byDiscipline = discipline === 'All' || a.discipline === discipline;
+    const byYear = year === 'All' || publicationYear === year;
+    const byUniversity = !university || a.university.toLowerCase().includes(university);
+    const byCountry = !country || a.country.toLowerCase().includes(country);
+    const byKeyword = !keyword || a.keywords.join(' ').toLowerCase().includes(keyword) || a.tags.join(' ').toLowerCase().includes(keyword);
+    return byQ && byCat && byDiscipline && byYear && byUniversity && byCountry && byKeyword;
+  }).sort((a, b) => {
+    if (sort === 'Oldest') return new Date(a.date) - new Date(b.date);
+    if (sort === 'Most downloaded') return b.downloads - a.downloads;
+    if (sort === 'Alphabetical') return a.title.localeCompare(b.title);
+    return new Date(b.date) - new Date(a.date);
   });
 
   const filteredDissertations = dissertations.filter((d) => {
     const text = `${d.student} ${d.title} ${d.abstract} ${d.topic}`.toLowerCase();
     const byQ = !q || text.includes(q);
-    const byBatch = batch === 'All' || d.batch === batch;
-    return byQ && byBatch;
+    const byCat = cat === 'All' || cat === 'Dissertations';
+    const byDiscipline = discipline === 'All' || d.topic === discipline;
+    return byQ && byCat && byDiscipline;
   });
 
   const articleHtml = filteredArticles.map((a) => `
     <article class="article-card">
       <div class="meta"><span class="category-pill">${a.category}</span><span>${formatDate(a.date)}</span></div>
       <h3><a class="title-link" href="article.html?id=${encodeURIComponent(a.slug)}">${a.title}</a></h3>
-      <p>${a.author} · ${readTime(a.body)}</p>
+      <p><strong>${a.author}</strong> · ${a.university} · ${a.country}</p>
+      <p><span class="tag-pill">${a.discipline}</span>${a.keywords.slice(0, 2).map((k) => `<span class="tag-pill">${k}</span>`).join('')}</p>
       <p>${escapeHtml(a.abstract).slice(0, 160)}...</p>
-      <a class="btn btn--outline" href="article.html?id=${encodeURIComponent(a.slug)}">Open Article</a>
+      <a class="btn btn--outline" href="article.html?id=${encodeURIComponent(a.slug)}">Open Publication</a>
     </article>
   `).join('');
 
@@ -223,14 +259,14 @@ function renderJournal(articles, dissertations) {
       <article class="article-card">
         <div class="meta"><span class="category-pill">Dissertation ${d.batch}</span><span>${d.topic}</span></div>
         <h3>${d.title}</h3>
-        <p><strong>${d.student}</strong> · Supervisor: ${d.supervisor}</p>
+        <p><strong>${d.student || 'Author forthcoming'}</strong> · Supervisor: ${d.supervisor || 'Not specified'}</p>
         <p>${escapeHtml(d.abstract).slice(0, 160)}...</p>
         ${d.pdf ? `<a class="btn btn--ghost" href="${d.pdf}" target="_blank" rel="noopener">Download PDF</a>` : ''}
       </article>
     `).join('') || '<div class="empty-state">No dissertations match your current filters.</div>';
   }
 
-  host.innerHTML = articleHtml || '<div class="empty-state">No journal entries match your current filters.</div>';
+  host.innerHTML = articleHtml || '<div class="empty-state">No publications match your current filters.</div>';
 }
 
 async function loadJournalPage() {
@@ -238,8 +274,13 @@ async function loadJournalPage() {
   if (!host) return;
   host.innerHTML = '<p>Loading publications...</p>';
   const [articles, dissertations] = await Promise.all([loadArticles(), loadDissertations()]);
+  const yearFilter = document.getElementById('yearFilter');
+  if (yearFilter) {
+    const years = [...new Set(articles.map((a) => a.date ? String(new Date(a.date).getFullYear()) : '').filter(Boolean))].sort((a, b) => b.localeCompare(a));
+    yearFilter.innerHTML = '<option>All</option>' + years.map((y) => `<option>${y}</option>`).join('');
+  }
   const render = () => renderJournal(articles, dissertations);
-  ['searchInput', 'categoryFilter', 'batchFilter'].forEach((id) => {
+  ['searchInput', 'categoryFilter', 'disciplineFilter', 'yearFilter', 'universityFilter', 'countryFilter', 'keywordFilter', 'sortFilter'].forEach((id) => {
     const el = document.getElementById(id);
     if (el) el.addEventListener('input', render);
     if (el) el.addEventListener('change', render);
@@ -252,32 +293,40 @@ async function loadArticlePage() {
   if (!host) return;
   const slug = new URLSearchParams(window.location.search).get('id');
   if (!slug) {
-    host.innerHTML = '<div class="empty-state">Missing article ID.</div>';
+    host.innerHTML = '<div class="empty-state">Missing publication ID.</div>';
     return;
   }
 
   const articles = await loadArticles();
   const article = articles.find((a) => a.slug === slug);
   if (!article) {
-    host.innerHTML = '<div class="empty-state">Article not found.</div>';
+    host.innerHTML = '<div class="empty-state">Publication not found.</div>';
     return;
   }
 
-  updateAnalytics(`article:${slug}`);
+  updateAnalytics(`publication:${slug}`);
   const related = articles.filter((a) => a.slug !== slug && (a.category === article.category || a.tags.some((t) => article.tags.includes(t)))).slice(0, 3);
 
+  const citation = citeAPA(article);
+  const renderedReferences = article.references ? renderMarkdown(article.references) : '<p>References are included in the publication text when supplied by the author.</p>';
   host.innerHTML = `
-   <p class="kicker">${article.category}</p>
-<h1>${article.title}</h1>
-
-${article.image ? `
-  <img src="${article.image}" 
-       style="width:100%; border-radius:12px; margin:20px 0;">
-` : ''}
+    <header class="article-header publication-header">
+      <p class="kicker">${article.category}</p>
+      <h1>${article.title}</h1>
+      ${article.image ? `<img src="${article.image}" alt="" style="width:100%; border-radius:12px; margin:20px 0;">` : ''}
       <p class="meta">By ${article.author} · ${formatDate(article.date)} · ${readTime(article.body)}</p>
-      
+      <dl class="metadata-grid">
+        <div><dt>University</dt><dd>${article.university}</dd></div>
+        <div><dt>Department</dt><dd>${article.department}</dd></div>
+        <div><dt>ORCID</dt><dd>${article.orcid ? `<a href="https://orcid.org/${article.orcid}" target="_blank" rel="noopener">${article.orcid}</a>` : 'Not provided'}</dd></div>
+        <div><dt>Discipline</dt><dd>${article.discipline}</dd></div>
+      </dl>
+      <section class="abstract-box"><h2>Abstract</h2><p>${escapeHtml(article.abstract)}</p></section>
+      <section><h2>Keywords</h2><p>${article.keywords.length ? article.keywords.map((k) => `<span class="tag-pill">${k}</span>`).join('') : '<span class="tag-pill">Humanities and Social Sciences</span>'}</p></section>
+      <section class="citation-box"><h2>Citation</h2><p>${citation}</p></section>
       <div class="btn-row">
-        ${article.pdf ? `<a class="btn btn--gold" href="${article.pdf}" target="_blank" rel="noopener">Download PDF</a>` : ''}
+        ${article.pdf ? `<a class="btn btn--gold" href="${article.pdf}" target="_blank" rel="noopener">Download PDF</a>` : '<a class="btn btn--gold" href="#publication-text">Read Publication</a>'}
+        ${article.pdf ? `<a class="btn btn--ghost" href="${article.pdf}" target="_blank" rel="noopener">PDF Link</a>` : ''}
         <button id="copyApa" class="btn btn--ghost" type="button">Copy APA</button>
         <button id="copyMla" class="btn btn--ghost" type="button">Copy MLA</button>
         <button id="readingMode" class="btn btn--outline" type="button">Reading Mode</button>
@@ -285,10 +334,11 @@ ${article.image ? `
       </div>
       <small id="citeMsg"></small>
     </header>
-    <article class="article-body">${renderMarkdown(article.body)}</article>
+    <article id="publication-text" class="article-body">${renderMarkdown(article.body)}</article>
+    <section class="article-header references-box"><h2>References</h2>${renderedReferences}</section>
     <section class="section" style="padding-bottom:0.5rem;">
-      <h3>Related Articles</h3>
-      <div class="grid grid-3">${related.map((r) => `<a class="card" href="article.html?id=${encodeURIComponent(r.slug)}"><strong>${r.title}</strong><p>${r.author}</p></a>`).join('') || '<p>No related entries yet.</p>'}</div>
+      <h3>Related Publications</h3>
+      <div class="grid grid-3">${related.map((r) => `<a class="card" href="article.html?id=${encodeURIComponent(r.slug)}"><strong>${r.title}</strong><p>${r.author}</p></a>`).join('') || '<p>No related publications yet.</p>'}</div>
     </section>
   `;
 
@@ -367,8 +417,8 @@ function loadAnalytics() {
   const entries = Object.entries(all).sort((a, b) => b[1] - a[1]);
   const total = entries.reduce((sum, [, n]) => sum + n, 0);
   host.innerHTML = `
-    <div class="metric"><small>Total article reads</small><strong>${total}</strong></div>
-    ${entries.slice(0, 5).map(([k, v]) => `<div class="metric"><small>${k.replace('article:', '')}</small><strong>${v}</strong></div>`).join('')}
+    <div class="metric"><small>Total publication reads</small><strong>${total}</strong></div>
+    ${entries.slice(0, 5).map(([k, v]) => `<div class="metric"><small>${k.replace('publication:', '').replace('article:', '')}</small><strong>${v}</strong></div>`).join('')}
   `;
 }
 

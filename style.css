@@ -251,3 +251,47 @@ body { background: var(--paper); color: var(--charcoal); }
 @media (max-width: 900px) { .hero { text-align:center; } .hero__grid, .newsletter__inner { grid-template-columns: 1fr; } .hero .btn-row { justify-content:center; } .hero__visual { min-height:260px; } }
 @media (max-width: 680px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } .newsletter-form { flex-direction:column; } .footer-bottom { flex-direction:column; } }
 @media (max-width: 420px) { .stats-grid { grid-template-columns: 1fr; } }
+
+/* Phase 2 scholarly publishing refinements */
+.library-tools {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .9rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 14px 34px rgba(15,23,40,.06);
+}
+.filter-field { display: grid; gap: .35rem; color: var(--navy); font-weight: 700; }
+.filter-field span { font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: #667085; }
+.filter-field--wide { grid-column: span 2; }
+.library-tools input, .library-tools select {
+  width: 100%;
+  border: 1px solid #cfd7e8;
+  border-radius: 12px;
+  padding: .78rem .85rem;
+  font: inherit;
+  background: #fbfcff;
+}
+.library-tools__submit { align-self: end; text-align: center; }
+.publication-header h2, .references-box h2 { font-size: 1.25rem; margin-bottom: .35rem; }
+.metadata-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .85rem;
+  margin: 1.25rem 0;
+}
+.metadata-grid div, .abstract-box, .citation-box {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fbfcff;
+  padding: .9rem;
+}
+.metadata-grid dt { color: #667085; font-size: .76rem; letter-spacing: .08em; text-transform: uppercase; font-weight: 800; }
+.metadata-grid dd { margin: .2rem 0 0; color: var(--navy); font-weight: 650; }
+.references-box { margin-top: 1rem; }
+:focus-visible { outline: 3px solid rgba(169,138,69,.45); outline-offset: 3px; }
+@media (max-width: 900px) { .library-tools { grid-template-columns: repeat(2, minmax(0, 1fr)); } .filter-field--wide { grid-column: span 2; } }
+@media (max-width: 560px) { .library-tools, .metadata-grid { grid-template-columns: 1fr; } .filter-field--wide { grid-column: span 1; } }

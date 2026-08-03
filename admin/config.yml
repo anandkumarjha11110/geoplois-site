@@ -16,9 +16,9 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Author", name: "author", widget: "string", default: "GEOPOLIS Editorial Board" }
+      - { label: "Author", name: "author", widget: "string", default: "GEOPOLIS Editorial Collective" }
       - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Category", name: "category", widget: "select", options: ["Research Articles", "Geopolitics", "Policy", "General", "Essay", "Book Review", "IR"] }
+      - { label: "Category", name: "category", widget: "select", options: ["Research Papers", "Essays", "Book Reviews", "Policy Briefs", "Working Papers", "Conference Papers", "Dissertations"] }
       - { label: "Tags", name: "tags", widget: "string", required: false }
       - { label: "PDF URL", name: "pdf", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
